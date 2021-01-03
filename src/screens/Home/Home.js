@@ -1,41 +1,56 @@
-import Header from '../../components/Header/Header';
+import { useContext } from 'react';
+import { Link } from 'react-router-dom';
 import { ReactComponent as Hero } from '../../assets/svg/guy-coding.svg';
-import { ReactComponent as ArrowDown } from '../../assets/svg/arrow-down.svg';
 import wave from '../../assets/svg/wave.png';
+import ReactTypingEffect from 'react-typing-effect';
+
+import TransitionScreenContext from '../../contexts/TransitionScreenContext';
+
 import './style.css';
 
 const Home = () => {
+  const { setLinkClicked } = useContext(TransitionScreenContext);
+
   return (
     <div
-      className="full-screen"
+      className="full-screen show-container"
       style={{
         backgroundImage: `url("${wave}")`,
       }}
     >
-      <Header />
-
       <section className="home-main__content" id="home">
         <div className="main-content_wrapper">
           <div className="main-content__left">
-            <h1>Leonardo M. Primieri</h1>
+            <h1>
+              <ReactTypingEffect
+                text={['Leonardo Merlo Primieri']}
+                typingDelay="2000"
+                staticText
+              />
+            </h1>
             <p>Desenvolvedor Front End.</p>
             <div className="content-left__buttons">
-              <button className="button button-secondary">
-                <a href="#github">repositórios</a>
-              </button>
-              <button className="button button-primary">
-                <a href="#projects">projetos</a>
-              </button>
+              <Link to="github">
+                <button
+                  className="button button-secondary"
+                  onClick={() => setLinkClicked(true)}
+                >
+                  repositórios
+                </button>
+              </Link>
+              <Link to="projects">
+                <button
+                  className="button button-primary"
+                  onClick={() => setLinkClicked(true)}
+                >
+                  projetos
+                </button>
+              </Link>
             </div>
           </div>
           <div className="main-content__right">
             <Hero className="hero-home" fill="black" />
           </div>
-        </div>
-        <div className="home-main__footer">
-          <a href="#about">
-            <ArrowDown />
-          </a>
         </div>
       </section>
     </div>

@@ -1,0 +1,11 @@
+.main-certificates {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 4rem;
+
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+

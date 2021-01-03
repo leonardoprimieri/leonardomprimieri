@@ -1,5 +1,6 @@
-<svg id="Componente_5_1" data-name="Componente 5 – 1" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
-  <circle id="Elipse_3" data-name="Elipse 3" cx="12.5" cy="12.5" r="12.5" fill="#ff725e"/>
-  <rect id="Retângulo_39" data-name="Retângulo 39" width="5" height="13" rx="2.5" transform="translate(10 2)" fill="#fff"/>
-  <rect id="Retângulo_40" data-name="Retângulo 40" width="5" height="5" rx="2.5" transform="translate(10 17)" fill="#fff"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="94.216" height="25.432" viewBox="0 0 94.216 25.432">
+  <circle id="Elipse_3" data-name="Elipse 3" cx="12.5" cy="12.5" r="12.5" transform="matrix(1, -0.017, 0.017, 1, 0, 0.436)" fill="#ff725e"/>
+  <rect id="Retângulo_39" data-name="Retângulo 39" width="5" height="9" rx="2.5" transform="translate(10.216 4.216)" fill="#fff"/>
+  <rect id="Retângulo_40" data-name="Retângulo 40" width="5" height="5" rx="2.5" transform="translate(10.216 16.216)" fill="#fff"/>
+  <text id="em_breve" data-name="em breve" transform="translate(27.216 18.216)" fill="var(--primary-color)" font-size="14" font-family="Poppins-Light, Poppins" font-weight="900"><tspan x="0" y="0">em breve</tspan></text>
 </svg>

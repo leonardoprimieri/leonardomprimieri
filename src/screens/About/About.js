@@ -13,9 +13,9 @@ const About = () => {
         backgroundImage: `url("${wave}")`,
       }}
     >
-      <section className="about-main" id="about">
+      <section className="about-main show-container" id="about">
         <SectionTitle>Sobre</SectionTitle>
-        <div className="about-main__content wrapper">
+        <div className="about-main__content">
           <div className="about-content__left">
             <p>
               Meu nome é Leonardo Merlo Primieri, sou desenvolvedor Front End há

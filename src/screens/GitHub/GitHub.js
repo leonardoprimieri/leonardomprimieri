@@ -26,7 +26,7 @@ const GitHub = () => {
 
   return (
     <div
-      className="repo-main "
+      className="repo-main show-container"
       id="github"
       style={{
         backgroundImage: `url("${github}")`,
@@ -35,7 +35,7 @@ const GitHub = () => {
       <SectionTitle>Repositórios</SectionTitle>
       <div className="repo-main__content">
         {repos.map((item, index) => (
-          <Tilt>
+          <Tilt style={{ transformStyle: 'preserve-3d' }}>
             <RepoCard data={item} key={index} />
           </Tilt>
         ))}

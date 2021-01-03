@@ -1,0 +1,47 @@
+.transition-screen {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #000;
+  z-index: 99999999;
+  transform: translateX(-100vw);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.transition-screen img {
+  border-radius: .5rem;
+}
+
+@keyframes hide1 {
+  0% {
+    transform: translateX(-200vw);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(200vw);
+  }
+
+  
+}
+
+
+
+@keyframes hide3 {
+  0% {
+    transform: translateY(-200vw);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(200vw);
+  }
+}

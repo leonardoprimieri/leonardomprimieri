@@ -4,8 +4,16 @@
   align-items: center;
   flex-direction: column;
   color: #fff;
+  height: 100vh;
+  overflow: hidden;
 }
-
+.about-main__content {
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
 
 
 .about-content__right svg.me-svg {
@@ -14,4 +22,22 @@
 
 .about-content__left {
   max-width: 50%;
+}
+
+@media (max-width: 1100px) {
+  .about-main {
+    margin-top: 10%;
+  }
+
+  .about-main__content {
+    flex-direction: column;
+  }
+
+  .about-content__left p {
+    margin-top: 1rem;
+  }
+
+  .about-content__right svg {
+    margin-top: -12rem;
+  }
 }

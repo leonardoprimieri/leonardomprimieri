@@ -32,6 +32,7 @@ export const jobs = [
       { name: 'AccuWeather API', image: <FaSun size={30} /> },
     ],
     sold: false,
+    project: true,
   },
   {
     id: 8,
@@ -41,6 +42,7 @@ export const jobs = [
     image: breakingblog,
     techs: [{ name: 'WordPress', image: <FaWordpress size={30} /> }],
     sold: false,
+    project: true,
   },
   {
     id: 2,
@@ -53,10 +55,11 @@ export const jobs = [
       { name: 'RiotGames API', image: <FaHandRock size={30} /> },
     ],
     sold: false,
+    project: true,
   },
   {
     id: 3,
-    name: 'netflix ui cline',
+    name: 'netflix ui clone',
     description: 'Esse foi um clone feito do UI da Netflix',
     image: netflix,
     techs: [
@@ -64,6 +67,7 @@ export const jobs = [
       { name: 'TMDB API', image: <FaVideo size={30} /> },
     ],
     sold: false,
+    project: true,
   },
   {
     id: 4,
@@ -76,6 +80,7 @@ export const jobs = [
       { name: 'NodeJS', image: <FaNode size={30} /> },
     ],
     sold: false,
+    project: true,
   },
   {
     id: 5,
@@ -88,6 +93,7 @@ export const jobs = [
       { name: 'PHP', image: <FaPhp size={30} /> },
     ],
     sold: true,
+    project: true,
   },
   {
     id: 6,
@@ -100,6 +106,7 @@ export const jobs = [
       { name: 'PHP', image: <FaPhp size={30} /> },
     ],
     sold: true,
+    project: true,
   },
   {
     id: 7,
@@ -112,6 +119,7 @@ export const jobs = [
       { name: 'PHP', image: <FaPhp size={30} /> },
     ],
     sold: true,
+    project: true,
   },
   {
     id: 1,
@@ -125,5 +133,6 @@ export const jobs = [
       { name: 'PHP', image: <FaPhp size={30} /> },
     ],
     sold: true,
+    project: true,
   },
 ];

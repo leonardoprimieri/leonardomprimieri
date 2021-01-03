@@ -7,7 +7,9 @@ const RepoCard = ({ data }) => {
         <hr />
         <div className="project-card__info">
           <h1>{data.name}</h1>
-          <p>{data.description}</p>
+          <p>
+            {data.description ? data.description : 'Projeto sem descrição 😣'}
+          </p>
         </div>
       </div>
     </a>

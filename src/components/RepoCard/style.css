@@ -10,11 +10,20 @@
 
   background-color: #000;
   border-radius: .5rem;
+
 }
+
+
 
 .repo-container h1 {
   color: var(--primary-color);
   font-weight: 400;
+  word-break: break-all;
+  height: 6rem;
+}
+
+.repo-container hr, h1, p {
+  transform: translateZ(3rem);
 }
 
 
@@ -25,3 +34,4 @@
   margin: 0 2rem;
   border-radius: .5rem;
 }
+

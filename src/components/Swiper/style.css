@@ -143,6 +143,11 @@ span.span-sold__project {
   .projects-main__content {
     padding: 0;
   }
+
+
+  .lm-slide__info p {
+    text-align: center;
+  }
   
 }
 

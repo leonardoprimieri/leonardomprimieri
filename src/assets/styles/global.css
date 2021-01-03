@@ -26,7 +26,7 @@ a {
 }
 
 :root {
-  --primary-color: #FF725E;
+  --primary-color: #75114b;
 }
 
 .wrapper {
@@ -36,6 +36,25 @@ a {
   justify-content: space-between;
   align-items: center;
 }
+
+
+.show-container {
+  opacity: 0;
+  transform: translate3d(42px, -62px, -135px);
+  animation: animeLeft 2s forwards;
+}
+
+
+
+@keyframes animeLeft {
+  
+  to {
+    opacity: initial;
+    transform: translateZ(0);
+  }
+
+}
+
 
 ::-webkit-scrollbar {
   width: .4rem;
@@ -76,3 +95,17 @@ a {
   color: var(--primary-color) !important;
 }
 
+input[type="color"] {
+	-webkit-appearance: none;
+	border: none;
+	width: 32px;
+  height: 32px;
+  border-radius: .5rem;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+	border: none;
+}

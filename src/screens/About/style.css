@@ -1,0 +1,17 @@
+.about-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+
+
+.about-content__right svg.me-svg {
+  max-width: 20rem;
+}
+
+.about-content__left {
+  max-width: 50%;
+}

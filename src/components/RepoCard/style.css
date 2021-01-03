@@ -1,0 +1,27 @@
+.repo-container {
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  color: #fff;
+  padding: 1rem;
+
+  height: 250px;
+
+
+  background-color: #000;
+  border-radius: .5rem;
+}
+
+.repo-container h1 {
+  color: var(--primary-color);
+  font-weight: 400;
+}
+
+
+.repo-container hr {
+  min-width: .2rem;
+  min-height: 10rem;
+  background-color: var(--primary-color);
+  margin: 0 2rem;
+  border-radius: .5rem;
+}

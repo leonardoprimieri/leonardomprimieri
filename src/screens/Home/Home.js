@@ -4,6 +4,8 @@ import { ReactComponent as Hero } from '../../assets/svg/guy-coding.svg';
 import wave from '../../assets/svg/wave.png';
 import ReactTypingEffect from 'react-typing-effect';
 
+import { FaExclamation, FaEye, FaGithub } from 'react-icons/fa';
+
 import TransitionScreenContext from '../../contexts/TransitionScreenContext';
 
 import './style.css';
@@ -36,6 +38,7 @@ const Home = () => {
                   onClick={() => setLinkClicked(true)}
                 >
                   repositórios
+                  <FaGithub />
                 </button>
               </Link>
               <Link to="projects">
@@ -44,6 +47,7 @@ const Home = () => {
                   onClick={() => setLinkClicked(true)}
                 >
                   projetos
+                  <FaEye />
                 </button>
               </Link>
             </div>

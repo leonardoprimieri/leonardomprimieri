@@ -1,5 +1,5 @@
 import { ReactComponent as Logo } from '../../assets/svg/logo.svg';
-
+import ReactTooltip from 'react-tooltip';
 import {
   FaBlog,
   FaExclamation,
@@ -13,24 +13,33 @@ import './style.css';
 import { NavLink } from 'react-router-dom';
 import { useContext } from 'react';
 import TransitionScreenContext from '../../contexts/TransitionScreenContext';
+import MenuMobileContext from '../../contexts/MenuMobileContext';
 
-const SideBar = () => {
+const SideBar = ({ mobile }) => {
   // const [mainColor, setMainColor] = useState('#ff725e');
 
   const { setLinkClicked } = useContext(TransitionScreenContext);
+  const { setMobile } = useContext(MenuMobileContext);
 
   // useEffect(() => {
   //   let root = document.documentElement;
   //   root.style.setProperty('--primary-color', mainColor);
   // }, [mainColor]);
+
+  function handleLinkClick(state) {
+    setLinkClicked((state) => !state);
+    setMobile(false);
+  }
+
   return (
     <>
-      <aside>
+      <aside style={mobile ? { height: '100%' } : { height: '10%' }}>
+        <ReactTooltip />
         <div className="aside-content">
           <div className="aside-logo">
             <NavLink
               to="/"
-              onClick={() => setLinkClicked((state) => !state)}
+              onClick={handleLinkClick}
               activeClassName="active-menu"
             >
               <Logo id="logo" />
@@ -38,7 +47,13 @@ const SideBar = () => {
             </NavLink>
           </div>
           <nav>
-            <ul>
+            <ul
+              style={
+                mobile
+                  ? { display: 'flex', flexDirection: 'column' }
+                  : { height: '10%' }
+              }
+            >
               <li>
                 <div>
                   <FaBlog
@@ -48,15 +63,17 @@ const SideBar = () => {
                   />
                   <FaExclamation
                     className="svg-warning menu-span-item"
-                    color="#1c1c1c"
+                    color="#fff"
+                    data-tip="em construção"
                   />
                 </div>
+
                 <span className="blog-span">Blog</span>
               </li>
               <li>
                 <NavLink
                   to="about"
-                  onClick={() => setLinkClicked((state) => !state)}
+                  onClick={handleLinkClick}
                   activeClassName="active-menu"
                 >
                   <FaUser size={24} color="#fff" className="menu-span-item" />
@@ -66,7 +83,7 @@ const SideBar = () => {
               <li>
                 <NavLink
                   to="projects"
-                  onClick={() => setLinkClicked((state) => !state)}
+                  onClick={handleLinkClick}
                   activeClassName="active-menu"
                 >
                   <FaProjectDiagram
@@ -80,7 +97,7 @@ const SideBar = () => {
               <li>
                 <NavLink
                   to="github"
-                  onClick={() => setLinkClicked((state) => !state)}
+                  onClick={handleLinkClick}
                   activeClassName="active-menu"
                 >
                   <FaGithub size={24} color="#fff" className="menu-span-item" />
@@ -90,7 +107,7 @@ const SideBar = () => {
               <li>
                 <NavLink
                   to="certificates"
-                  onClick={() => setLinkClicked((state) => !state)}
+                  onClick={handleLinkClick}
                   activeClassName="active-menu"
                 >
                   <FaMedal size={24} color="#fff" className="menu-span-item" />

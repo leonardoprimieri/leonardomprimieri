@@ -2,11 +2,12 @@ aside {
   position: fixed;
   left: 0;
   top: 0;
-  background: var(--primary-color);
   height: 100vh;
   margin-right: 1rem;
-  z-index: 99999999999999;
+  z-index: 9999999;
   max-width: 10%;
+  transition: all 400ms ease;
+
 }
 
 .aside-content nav ul li a,
@@ -87,7 +88,14 @@ svg.svg-warning {
   top: 0;
   right: 1rem;
   position: relative;
+  background-color: red;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  padding: .2rem;
+  background-color: #1c1c1c;
 }
+
 
 .aside-content ul li{
   margin: 1rem 0;
@@ -95,21 +103,29 @@ svg.svg-warning {
 
 .aside-content nav ul li a.active-menu svg,
 .aside-content nav ul li a.active-menu span {
-  fill: #1c1c1c;
-  color: #1c1c1c;
+  fill: var(--primary-color);
+  color: var(--primary-color);
 }
 
 
 @media (max-width: 1100px) {
+
+  .aside-content nav ul li a.active-menu svg,
+  .aside-content nav ul li a.active-menu span {
+  fill: #1c1c1c;
+  color: #1c1c1c;
+  }
+
   aside {
     position: fixed;
     left: 0;
-    top: 0;
+    bottom: 0;
     height: 10%;
     margin-right: 1rem;
     z-index: 99999999999999;
     width: 100vw;
     max-width: 100%;
+    background-color: var(--primary-color);
   }
 
   .aside-logo {
@@ -157,5 +173,6 @@ svg.svg-warning {
 @media (max-width: 510px) {
   .aside-content ul {
     display: none;
+
   }
 }

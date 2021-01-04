@@ -66,6 +66,13 @@
   cursor: pointer;
   transition: all 400ms ease;
   border: 1px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button svg {
+  margin: 0 .3rem;
 }
 
 .button-primary {

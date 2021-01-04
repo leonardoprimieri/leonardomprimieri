@@ -112,10 +112,7 @@ span.span-sold__project {
     width: 100% !important;
     padding: 3rem;
   }
-  .lm-slide__img  {
-    display: none;
-  }
-
+ 
   .lm-slide__info {
     display: flex;
     justify-content: center;

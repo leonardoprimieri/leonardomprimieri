@@ -24,7 +24,10 @@ function App() {
           name="description"
           content="Leonardo Merlo Primieri | Programador Front-End"
         />
-
+        <meta
+          name="google-site-verification"
+          content="4vynGKlbaE1CBzgV7cjPB0nJHyvltchEkzSbqkbVY9I"
+        />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <meta property="og:site_name" content="Leonardo Merlo Primieri" />
         <meta property="og:locale" content="pt_BR" />

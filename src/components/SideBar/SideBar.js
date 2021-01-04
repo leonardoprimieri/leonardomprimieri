@@ -1,110 +1,105 @@
 import { ReactComponent as Logo } from '../../assets/svg/logo.svg';
 
-import ReactTooltip from 'react-tooltip';
-
 import {
   FaBlog,
   FaExclamation,
   FaGithub,
   FaMedal,
   FaProjectDiagram,
-  FaRedoAlt,
   FaUser,
 } from 'react-icons/fa';
 
 import './style.css';
-import { Link } from 'react-router-dom';
-import { useContext, useEffect, useState } from 'react';
+import { NavLink } from 'react-router-dom';
+import { useContext } from 'react';
 import TransitionScreenContext from '../../contexts/TransitionScreenContext';
 
 const SideBar = () => {
-  const [mainColor, setMainColor] = useState('#ff725e');
+  // const [mainColor, setMainColor] = useState('#ff725e');
 
   const { setLinkClicked } = useContext(TransitionScreenContext);
 
-  useEffect(() => {
-    let root = document.documentElement;
-    root.style.setProperty('--primary-color', mainColor);
-  }, [mainColor]);
+  // useEffect(() => {
+  //   let root = document.documentElement;
+  //   root.style.setProperty('--primary-color', mainColor);
+  // }, [mainColor]);
   return (
     <>
       <aside>
-        <ReactTooltip />
-
         <div className="aside-content">
           <div className="aside-logo">
-            <Link to="/" onClick={() => setLinkClicked((state) => !state)}>
+            <NavLink
+              to="/"
+              onClick={() => setLinkClicked((state) => !state)}
+              activeClassName="active-menu"
+            >
               <Logo id="logo" />
               <span id="span-name">eonardo</span>
-            </Link>
+            </NavLink>
           </div>
           <nav>
             <ul>
               <li>
-                <FaBlog
-                  data-tip="blog"
-                  className="svg-blog"
-                  size={24}
-                  color="#fff"
-                />
-                <FaExclamation
-                  className="svg-warning"
-                  data-tip="em construção"
-                  color="#1c1c1c"
-                />
+                <div>
+                  <FaBlog className="svg-blog" size={24} color="#fff" />
+                  <FaExclamation className="svg-warning" color="#1c1c1c" />
+                </div>
+                <span>blog</span>
               </li>
               <li>
-                <Link
+                <NavLink
                   to="about"
-                  data-tip="sobre"
                   onClick={() => setLinkClicked((state) => !state)}
+                  activeClassName="active-menu"
                 >
                   <FaUser size={24} color="#fff" />
-                </Link>
+                  <span>Sobre</span>
+                </NavLink>
               </li>
               <li>
-                <Link
+                <NavLink
                   to="projects"
-                  data-tip="projetos"
                   onClick={() => setLinkClicked((state) => !state)}
+                  activeClassName="active-menu"
                 >
                   <FaProjectDiagram size={24} color="#fff" />
-                </Link>
+                  <span className="small-item">Projetos</span>
+                </NavLink>
               </li>
               <li>
-                <Link
+                <NavLink
                   to="github"
-                  data-tip="repositórios"
                   onClick={() => setLinkClicked((state) => !state)}
+                  activeClassName="active-menu"
                 >
                   <FaGithub size={24} color="#fff" />
-                </Link>
+                  <span>Github</span>
+                </NavLink>
               </li>
               <li>
-                <Link
+                <NavLink
                   to="certificates"
-                  data-tip="certificados"
                   onClick={() => setLinkClicked((state) => !state)}
+                  activeClassName="active-menu"
                 >
                   <FaMedal size={24} color="#fff" />
-                </Link>
+                  <span className="small-item">Certificados</span>
+                </NavLink>
               </li>
-              <li>
+              {/* <li>
                 <FaRedoAlt
                   onClick={() => setMainColor('#FF725E')}
                   size={24}
                   color="#fff"
-                  data-tip="voltar a cor padrão"
                 />
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <input
                   type="color"
                   value={mainColor}
-                  data-tip="alterar cor pradrão"
                   onChange={({ target }) => setMainColor(target.value)}
                 />
-              </li>
+              </li> */}
             </ul>
           </nav>
         </div>

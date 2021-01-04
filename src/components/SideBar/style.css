@@ -9,6 +9,24 @@ aside {
   max-width: 10%;
 }
 
+.aside-content nav ul li a,
+.aside-content nav ul li:first-child{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.aside-content span {
+  color: #fff;
+}
+
+.aside-content span.small-item {
+  font-size: .7rem;
+}
+
+
+
 .aside-logo #span-name  {
   font-size: 1rem;
   text-transform: uppercase;
@@ -37,6 +55,7 @@ aside {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .aside-logo svg{
@@ -46,6 +65,7 @@ aside {
 .aside-content svg{
   cursor: pointer;
 }
+
 
 .aside-content svg:hover {
   fill: #1c1c1c;
@@ -71,6 +91,10 @@ svg.svg-warning {
 
 .aside-content ul li{
   margin: 1rem 0;
+}
+
+.aside-content nav ul li a.active-menu svg {
+  fill: #1c1c1c;
 }
 
 @media (max-width: 1100px) {

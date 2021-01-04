@@ -109,15 +109,16 @@
 
   .main-content__right svg {
     min-width: 50%;
-    margin-top: -6rem;
+    margin-top: -9rem;
   }
 
   .home-main__content {
-    margin-top: 5rem;
+    margin-top: 7rem;
   }
 
   .content-left__buttons {
     flex-direction: column;
+    align-items: flex-start;
   }
 
   .content-left__buttons button {

@@ -23,7 +23,7 @@ const Home = () => {
           <div className="main-content__left">
             <h1>
               <ReactTypingEffect
-                text={['Leonardo Merlo Primieri']}
+                text={['Leonardo M. Primieri']}
                 typingDelay="2000"
                 staticText
               />

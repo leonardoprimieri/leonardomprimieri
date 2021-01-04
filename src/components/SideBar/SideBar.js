@@ -34,7 +34,8 @@ const SideBar = () => {
         <div className="aside-content">
           <div className="aside-logo">
             <Link to="/" onClick={() => setLinkClicked((state) => !state)}>
-              <Logo />
+              <Logo id="logo" />
+              <span id="span-name">eonardo</span>
             </Link>
           </div>
           <nav>

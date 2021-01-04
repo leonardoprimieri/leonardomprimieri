@@ -51,11 +51,11 @@ export default ({ data }) => {
                     )}
                   </div>
                   <p>{description}</p>
-                  <button className="button button-primary">
-                    {project === true
-                      ? 'projeto completo'
-                      : 'verificar certificado'}
-                  </button>
+                  {/* {project && (
+                    <button className="button button-primary">
+                      projeto completo | não hospedado
+                    </button>
+                  )} */}
                 </div>
                 {techs && (
                   <div className="lm-slide__techs">

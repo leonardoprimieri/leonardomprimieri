@@ -8,8 +8,8 @@ const TransitionScreen = ({ transition }) => {
       className="transition-screen"
       style={
         transition === false
-          ? { animation: `hide1 1s forwards` }
-          : { animation: 'hide3 1s forwards' }
+          ? { animation: `hide1 1s ease forwards` }
+          : { animation: 'hide3 1s ease forwards' }
       }
     >
       <img src={gif} alt="michael doing a beauty thing" />

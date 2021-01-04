@@ -9,6 +9,28 @@ aside {
   max-width: 10%;
 }
 
+.aside-logo #span-name  {
+  font-size: 1rem;
+  text-transform: uppercase;
+  opacity: 0;
+  clip-path: circle(0%);
+  transition: all 400ms ease;
+  position: fixed;
+  top: 5rem;
+  color: #fff;
+}
+
+
+
+.aside-logo #logo {
+  cursor: pointer;
+}
+
+.aside-logo #logo:hover + #span-name{
+  opacity: 1;
+  clip-path: circle(100%);
+}
+
 .aside-content {
   padding: .5rem;
   display: flex;
@@ -84,6 +106,10 @@ svg.svg-warning {
 
    .aside-content svg.svg-warning,
    .aside-content svg.svg-blog {
+     display: none;
+   }
+
+   #span-name {
      display: none;
    }
 }

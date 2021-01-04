@@ -41,10 +41,17 @@ const SideBar = () => {
             <ul>
               <li>
                 <div>
-                  <FaBlog className="svg-blog" size={24} color="#fff" />
-                  <FaExclamation className="svg-warning" color="#1c1c1c" />
+                  <FaBlog
+                    className="svg-blog menu-span-item"
+                    size={24}
+                    color="#fff"
+                  />
+                  <FaExclamation
+                    className="svg-warning menu-span-item"
+                    color="#1c1c1c"
+                  />
                 </div>
-                <span>blog</span>
+                <span className="blog-span ">Blog</span>
               </li>
               <li>
                 <NavLink
@@ -52,7 +59,7 @@ const SideBar = () => {
                   onClick={() => setLinkClicked((state) => !state)}
                   activeClassName="active-menu"
                 >
-                  <FaUser size={24} color="#fff" />
+                  <FaUser size={24} color="#fff" className="menu-span-item" />
                   <span>Sobre</span>
                 </NavLink>
               </li>
@@ -62,8 +69,12 @@ const SideBar = () => {
                   onClick={() => setLinkClicked((state) => !state)}
                   activeClassName="active-menu"
                 >
-                  <FaProjectDiagram size={24} color="#fff" />
-                  <span className="small-item">Projetos</span>
+                  <FaProjectDiagram
+                    size={24}
+                    color="#fff"
+                    className="menu-span-item"
+                  />
+                  <span className="small-item ">Projetos</span>
                 </NavLink>
               </li>
               <li>
@@ -72,7 +83,7 @@ const SideBar = () => {
                   onClick={() => setLinkClicked((state) => !state)}
                   activeClassName="active-menu"
                 >
-                  <FaGithub size={24} color="#fff" />
+                  <FaGithub size={24} color="#fff" className="menu-span-item" />
                   <span>Github</span>
                 </NavLink>
               </li>
@@ -82,8 +93,8 @@ const SideBar = () => {
                   onClick={() => setLinkClicked((state) => !state)}
                   activeClassName="active-menu"
                 >
-                  <FaMedal size={24} color="#fff" />
-                  <span className="small-item">Certificados</span>
+                  <FaMedal size={24} color="#fff" className="menu-span-item" />
+                  <span className="small-item ">Certificados</span>
                 </NavLink>
               </li>
               {/* <li>

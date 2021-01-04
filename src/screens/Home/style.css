@@ -41,6 +41,7 @@
 .main-content__left h1 {
   color: var(--primary-color);
   font-size: 3rem;
+  margin-left: -12px;
 }
 
 .main-content__left p {

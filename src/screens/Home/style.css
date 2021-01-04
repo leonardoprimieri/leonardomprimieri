@@ -136,4 +136,12 @@
     justify-content: center;
     align-items: center;
   }
+  .main-content__left h1 {
+    margin-left: -5px;
+  }
+
+  .main-content__right svg {
+    min-width: 50%;
+}
+
 }

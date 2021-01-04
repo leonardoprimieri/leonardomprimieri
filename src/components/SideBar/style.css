@@ -93,9 +93,12 @@ svg.svg-warning {
   margin: 1rem 0;
 }
 
-.aside-content nav ul li a.active-menu svg {
-  fill: #1c1c1c80;
+.aside-content nav ul li a.active-menu svg,
+.aside-content nav ul li a.active-menu span {
+  fill: #1c1c1c;
+  color: #1c1c1c;
 }
+
 
 @media (max-width: 1100px) {
   aside {
@@ -130,7 +133,8 @@ svg.svg-warning {
 
 
    .aside-content svg.svg-warning,
-   .aside-content svg.svg-blog {
+   .aside-content svg.svg-blog, 
+   .aside-content .blog-span {
      display: none;
    }
 
@@ -150,8 +154,8 @@ svg.svg-warning {
    
 }
 
-@media (max-width: 500px) {
-  span.menu-span-item {
-    font-size: .6rem;
+@media (max-width: 510px) {
+  .aside-content ul {
+    display: none;
   }
 }

@@ -51,7 +51,7 @@ const SideBar = () => {
                     color="#1c1c1c"
                   />
                 </div>
-                <span className="blog-span ">Blog</span>
+                <span className="blog-span">Blog</span>
               </li>
               <li>
                 <NavLink

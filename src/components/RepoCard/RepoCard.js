@@ -2,7 +2,7 @@ import './style.css';
 
 const RepoCard = ({ data }) => {
   return (
-    <a href={data.url} target="_blak">
+    <a href={data.svn_url} target="_blak">
       <div className="repo-container">
         <hr />
         <div className="project-card__info">

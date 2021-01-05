@@ -18,9 +18,10 @@ const About = () => {
         <div className="about-main__content">
           <div className="about-content__left">
             <p>
-              Meu nome é Leonardo Merlo Primieri, sou desenvolvedor Front End há
-              2 anos. Atualmente estou fazendo ciências da computação na IMED,
-              em Passo Fundo. Seja bem vindo ao meu portfólio!
+              Meu nome é Leonardo Merlo Primieri, estudante de Front End há 2
+              anos. Moro em São José do Ouro e estou fazendo ciências da
+              computação na IMED, em Passo Fundo. Seja bem vindo ao meu
+              portfólio!
             </p>
           </div>
           <div className="about-content__right">

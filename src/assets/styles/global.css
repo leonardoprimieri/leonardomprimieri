@@ -5,6 +5,7 @@ html, body {
 
 html {
   scroll-behavior: smooth;
+  font-size: 100%;
 }
 
 * {

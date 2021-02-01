@@ -35,7 +35,11 @@ const GitHub = () => {
       <SectionTitle>Repositórios</SectionTitle>
       <div className="repo-main__content">
         {repos.map((item, index) => (
-          <Tilt style={{ transformStyle: 'preserve-3d' }} key={index}>
+          <Tilt
+            className="tilt-container"
+            style={{ transformStyle: 'preserve-3d' }}
+            key={index}
+          >
             <RepoCard data={item} key={index} />
           </Tilt>
         ))}

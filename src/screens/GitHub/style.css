@@ -20,3 +20,6 @@
   padding: 2rem;
 }
 
+.tilt-container:nth-child(3n) {
+  grid-column: span 2;
+}

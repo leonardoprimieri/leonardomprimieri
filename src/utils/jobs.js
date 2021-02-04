@@ -19,6 +19,7 @@ import rank from '../assets/svg/rank.png';
 import otohits from '../assets/svg/otohits.png';
 import net from '../assets/svg/net.png';
 import breakingblog from '../assets/svg/breakingblog.png';
+import leagueofquiz from '../assets/svg/leagueofquiz.png';
 
 export const jobs = [
   {
@@ -133,6 +134,16 @@ export const jobs = [
       { name: 'PHP', image: <FaPhp size={30} /> },
     ],
     sold: true,
+    project: true,
+  },
+  {
+    id: 10,
+    name: 'League of Quiz',
+    description:
+      'Projeto feito durante a imersão da Alura. Vencedor da bolsa de estudos para a JAM Stack.',
+    image: leagueofquiz,
+    techs: [{ name: 'NextJS', image: <FaReact size={30} /> }],
+    sold: false,
     project: true,
   },
 ];

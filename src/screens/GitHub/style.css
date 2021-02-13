@@ -6,7 +6,7 @@
   padding: 10rem;
   background-repeat: no-repeat;
   background-position: -234px -275px;
-  
+
 }
 
 
@@ -18,8 +18,4 @@
   gap: 1rem;
   justify-content: center;
   padding: 2rem;
-}
-
-.tilt-container:nth-child(3n) {
-  grid-column: span 2;
 }

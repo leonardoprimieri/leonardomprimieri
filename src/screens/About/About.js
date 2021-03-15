@@ -21,8 +21,15 @@ const About = () => {
               Meu nome é Leonardo Merlo Primieri, estudante de Front End há 2
               anos. Moro em Passo Fundo - RS estou fazendo ciências da
               computação na IMED e sou Dev Front End na{' '}
-              <a href="https://www.whydea.com.br/">Whydea</a>. Seja bem vindo ao
-              meu portfólio!
+              <a
+                style={{ color: 'var(--primary-color)' }}
+                href="https://www.whydea.com.br/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Whydea
+              </a>
+              . Seja bem vindo ao meu portfólio!
             </p>
           </div>
           <div className="about-content__right">

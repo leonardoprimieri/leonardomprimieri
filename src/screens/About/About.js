@@ -19,9 +19,10 @@ const About = () => {
           <div className="about-content__left">
             <p>
               Meu nome é Leonardo Merlo Primieri, estudante de Front End há 2
-              anos. Moro em São José do Ouro e estou fazendo ciências da
-              computação na IMED, em Passo Fundo. Seja bem vindo ao meu
-              portfólio!
+              anos. Moro em Passo Fundo - RS estou fazendo ciências da
+              computação na IMED e sou Dev Front End na{' '}
+              <a href="https://www.whydea.com.br/">Whydea</a>. Seja bem vindo ao
+              meu portfólio!
             </p>
           </div>
           <div className="about-content__right">

@@ -33,7 +33,14 @@ const About = () => {
             </p>
           </div>
           <div className="about-content__right">
-            <Me className="me-svg" />
+            <div className="father-circle">
+              <div className="son-circle">
+                <img
+                  src="https://avatars.githubusercontent.com/u/59492647?v=4"
+                  alt="Leonardo"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>

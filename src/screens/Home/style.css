@@ -13,8 +13,9 @@
   flex-direction: column;
 }
 
+
 .main-content_wrapper {
-  width: 80%;
+  width: 1250px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;

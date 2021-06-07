@@ -1,31 +1,31 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="157.5" height="153.5" viewBox="0 0 157.5 153.5">
-  <path id="Caminho_4" data-name="Caminho 4" d="M564.323,315" transform="translate(-474.421 -264.576)" fill="none" stroke="#707070" stroke-width="1"/>
+  <path className="lp-logo" id="Caminho_4" data-name="Caminho 4" d="M564.323,315" transform="translate(-474.421 -264.576)" fill="none" stroke="#707070" stroke-width="1"/>
   <g id="Grupo_1" data-name="Grupo 1">
     <rect id="Retângulo_1" data-name="Retângulo 1" width="150" height="150" rx="8" transform="translate(0 0)" fill="var(--primary-color)"/>
     <g id="Retângulo_2" data-name="Retângulo 2" transform="translate(7 9)" fill="none" stroke="rgba(0,0,0,0.17)" stroke-width="0.5">
-      <path d="M6,0H150a0,0,0,0,1,0,0V138a6,6,0,0,1-6,6H0a0,0,0,0,1,0,0V6A6,6,0,0,1,6,0Z" stroke="none"/>
-      <path d="M6-.25H150a.25.25,0,0,1,.25.25V138a6.25,6.25,0,0,1-6.25,6.25H0A.25.25,0,0,1-.25,144V6A6.25,6.25,0,0,1,6-.25Z" fill="none"/>
+      <path className="lp-logo" d="M6,0H150a0,0,0,0,1,0,0V138a6,6,0,0,1-6,6H0a0,0,0,0,1,0,0V6A6,6,0,0,1,6,0Z" stroke="none"/>
+      <path className="lp-logo" d="M6-.25H150a.25.25,0,0,1,.25.25V138a6.25,6.25,0,0,1-6.25,6.25H0A.25.25,0,0,1-.25,144V6A6.25,6.25,0,0,1,6-.25Z" fill="none"/>
     </g>
-    <path id="Caminho_4-2" data-name="Caminho 4" d="M576.564,361.233" transform="translate(-506.909 -251.484)" fill="none" stroke="#707070" stroke-width="0.5"/>
+    <path className="lp-logo" id="Caminho_4-2" data-name="Caminho 4" d="M576.564,361.233" transform="translate(-506.909 -251.484)" fill="none" stroke="#707070" stroke-width="0.5"/>
   </g>
   <g id="L" transform="translate(38.652 20.585)">
     <g id="Componente_1_1" data-name="Componente 1 – 1" transform="translate(0 84.301)">
-      <path id="Caminho_3" data-name="Caminho 3" d="M576.867,364.892l-27.4,26.8H630.02l-27.4-26.8Z" transform="translate(-549.466 -364.892)" fill="#fff"/>
+      <path className="lp-logo" id="Caminho_3" data-name="Caminho 3" d="M576.867,364.892l-27.4,26.8H630.02l-27.4-26.8Z" transform="translate(-549.466 -364.892)" fill="#fff"/>
     </g>
-    <path id="Caminho_1" data-name="Caminho 1" d="M546,315V422.072L573.156,395.3V341.768Z" transform="translate(-545.567 -315)" fill="#d06b5f"/>
-    <path id="Caminho_11" data-name="Caminho 11" d="M432.235,319.677" transform="translate(-426.206 -319.677)" fill="none" stroke="#707070" stroke-width="1"/>
-    <path id="Caminho_14" data-name="Caminho 14" d="M432.235,319.677" transform="translate(-426.206 -319.677)" fill="none" stroke="#707070" stroke-width="1"/>
-    <path id="Caminho_12" data-name="Caminho 12" d="M432.235,326.161V431.25l.569-95.126Z" transform="translate(-429.701 -324.178)" fill="#fff"/>
-    <path id="Caminho_16" data-name="Caminho 16" d="M547.547,387.431l26.988-26.8-25.947,26.8Z" transform="translate(-545.443 -276.326)" fill="#fff"/>
+    <path className="lp-logo" id="Caminho_1" data-name="Caminho 1" d="M546,315V422.072L573.156,395.3V341.768Z" transform="translate(-545.567 -315)" fill="#d06b5f"/>
+    <path className="lp-logo" id="Caminho_11" data-name="Caminho 11" d="M432.235,319.677" transform="translate(-426.206 -319.677)" fill="none" stroke="#707070" stroke-width="1"/>
+    <path className="lp-logo" id="Caminho_14" data-name="Caminho 14" d="M432.235,319.677" transform="translate(-426.206 -319.677)" fill="none" stroke="#707070" stroke-width="1"/>
+    <path className="lp-logo" id="Caminho_12" data-name="Caminho 12" d="M432.235,326.161V431.25l.569-95.126Z" transform="translate(-429.701 -324.178)" fill="#fff"/>
+    <path className="lp-logo" id="Caminho_16" data-name="Caminho 16" d="M547.547,387.431l26.988-26.8-25.947,26.8Z" transform="translate(-545.443 -276.326)" fill="#fff"/>
   </g>
   <g id="L-2" data-name="L" transform="translate(38.652 20.585)">
     <g id="Componente_1_2" data-name="Componente 1 – 2" transform="translate(0 84.301)">
-      <path id="Caminho_3-2" data-name="Caminho 3" d="M576.867,364.892l-27.4,26.8H630.02l-27.4-26.8Z" transform="translate(-549.466 -364.892)" fill="#fff"/>
+      <path className="lp-logo" id="Caminho_3-2" data-name="Caminho 3" d="M576.867,364.892l-27.4,26.8H630.02l-27.4-26.8Z" transform="translate(-549.466 -364.892)" fill="#fff"/>
     </g>
-    <path id="Caminho_1-2" data-name="Caminho 1" d="M546,315V422.072L573.156,395.3V341.768Z" transform="translate(-545.567 -315)" fill="#d06b5f"/>
-    <path id="Caminho_11-2" data-name="Caminho 11" d="M432.235,319.677" transform="translate(-426.206 -319.677)" fill="none" stroke="#707070" stroke-width="1"/>
-    <path id="Caminho_14-2" data-name="Caminho 14" d="M432.235,319.677" transform="translate(-426.206 -319.677)" fill="none" stroke="#707070" stroke-width="1"/>
-    <path id="Caminho_12-2" data-name="Caminho 12" d="M432.235,326.161V431.25l.569-95.126Z" transform="translate(-429.701 -324.178)" fill="#fff"/>
-    <path id="Caminho_16-2" data-name="Caminho 16" d="M547.547,387.431l26.988-26.8-25.947,26.8Z" transform="translate(-545.443 -276.326)" fill="#fff"/>
+    <path className="lp-logo" id="Caminho_1-2" data-name="Caminho 1" d="M546,315V422.072L573.156,395.3V341.768Z" transform="translate(-545.567 -315)" fill="#d06b5f"/>
+    <path className="lp-logo" id="Caminho_11-2" data-name="Caminho 11" d="M432.235,319.677" transform="translate(-426.206 -319.677)" fill="none" stroke="#707070" stroke-width="1"/>
+    <path className="lp-logo" id="Caminho_14-2" data-name="Caminho 14" d="M432.235,319.677" transform="translate(-426.206 -319.677)" fill="none" stroke="#707070" stroke-width="1"/>
+    <path className="lp-logo" id="Caminho_12-2" data-name="Caminho 12" d="M432.235,326.161V431.25l.569-95.126Z" transform="translate(-429.701 -324.178)" fill="#fff"/>
+    <path className="lp-logo" id="Caminho_16-2" data-name="Caminho 16" d="M547.547,387.431l26.988-26.8-25.947,26.8Z" transform="translate(-545.443 -276.326)" fill="#fff"/>
   </g>
 </svg>

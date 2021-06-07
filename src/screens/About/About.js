@@ -1,4 +1,3 @@
-import { ReactComponent as Me } from '../../assets/svg/me.svg';
 import SectionTitle from '../../components/SectionTitle/SectionTitle';
 
 import wave from '../../assets/svg/wave-about.png';

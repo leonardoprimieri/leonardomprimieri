@@ -31,7 +31,7 @@ a {
 }
 
 .wrapper {
-  width: 80%;
+  width: 1250px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -45,6 +45,24 @@ a {
   animation: animeLeft 2s forwards;
 }
 
+.lp-logo {
+  fill-opacity: 0;
+  stroke-dasharray: 120 90;
+  stroke-dashoffset: 200;
+  animation: animeLogo 1s ease-in infinite alternate;
+}
+
+@keyframes animeLogo {
+  0% {
+    stroke-dasharray: 150 30;
+    stroke-dashoffset: 300;
+  } 80% {
+    stroke-dasharray: 800 30;
+    stroke-dashoffset: 0;
+  } 100% {
+    fill-opacity: 1;
+  }
+}
 
 
 @keyframes animeLeft {

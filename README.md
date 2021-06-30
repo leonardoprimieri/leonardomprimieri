@@ -16,4 +16,4 @@
 
 - [React](https://reactjs.org)
 
-## Link do projeto: https://leonardoprimieri.vercel.app
+## Link do projeto: https://leonardomprimieri.vercel.app

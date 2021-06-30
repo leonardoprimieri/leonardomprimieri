@@ -11,7 +11,7 @@
   flex-direction: column;
 }
 
-.lm-slide__info h1, 
+.lm-slide__info h1,
 .lm-slide__info p {
   margin: 1rem 0;
 }
@@ -27,8 +27,8 @@ span.span-sold__project {
   background-color: var(--primary-color);
   margin: 0 1rem;
   font-size: 1rem;
-  border-radius: .5rem;
-  padding: .5rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
   color: #fff;
 }
 
@@ -38,12 +38,18 @@ span.span-sold__project {
 
 .slide-info__name {
   display: flex;
-  justify-content: center;  
+  justify-content: center;
   align-items: center;
 }
 
 .lm-slide__info p {
   width: 50%;
+}
+
+.lm-slide__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .swiper-slide {
@@ -53,7 +59,7 @@ span.span-sold__project {
   padding: 0 4rem;
 }
 
-.swiper-slide img{
+.swiper-slide img {
   width: 250px;
   height: 500px;
   object-fit: contain;
@@ -75,18 +81,16 @@ span.span-sold__project {
 .lp-main-slider {
   background-position: center;
   background-repeat: no-repeat;
-  margin-left: -.5rem;
 }
-
 
 .tech-item {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: flex-start;
   align-items: center;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   padding: 1rem 2rem;
-  margin: .5rem;
+  margin: 0.5rem;
   border: 1px solid var(--primary-color);
   background: var(--primary-color);
 }
@@ -95,24 +99,19 @@ span.span-sold__project {
   min-width: 5rem;
 }
 
-
-
-
-
 .tech-item span {
-  margin: 0 .4rem;
+  margin: 0 0.4rem;
   width: 100%;
 }
 
 @media (max-width: 1275px) {
-  
   .swiper-slide {
     display: flex;
     flex-direction: column;
     width: 100% !important;
     padding: 3rem;
   }
- 
+
   .lm-slide__info {
     display: flex;
     justify-content: center;
@@ -126,34 +125,31 @@ span.span-sold__project {
     justify-content: center;
     align-items: center;
     max-width: 100%;
-    font-size: .7rem;
+    font-size: 0.7rem;
   }
 
   .tech-item span {
     text-align: center;
   }
 
-  
-
   .projects-main__content {
     padding: 0;
   }
 
-
   .lm-slide__info p {
     text-align: center;
   }
-  
 }
 
 @media (max-width: 580px) {
-  .button, .tech-item{
-    padding: .5rem;
+  .button,
+  .tech-item {
+    padding: 0.5rem;
     font-size: 0.8rem;
   }
 
   .slide-info__name {
-    font-size: .5rem;
+    font-size: 0.5rem;
     flex-direction: column;
     text-align: center;
   }
@@ -164,13 +160,12 @@ span.span-sold__project {
     background-image: none !important;
   }
 
- 
   .lm-slide__techs h2 {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
   .tech-item span {
-   display: none;
+    display: none;
   }
 
   .lm-slide__info p {
@@ -180,6 +175,5 @@ span.span-sold__project {
   #main {
     width: 100%;
     color: #fff;
-}
-  
+  }
 }

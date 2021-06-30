@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   background-color: #1c1c1c;
   overflow-x: hidden;
 }
@@ -13,11 +14,11 @@ html {
   padding: 0;
   border: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', Montserrat, sans-serif;
+  font-family: "Poppins", Montserrat, sans-serif;
 }
 
-
-ul, li {
+ul,
+li {
   list-style: none;
 }
 
@@ -27,17 +28,8 @@ a {
 }
 
 :root {
-  --primary-color: #FF725E;
+  --primary-color: #ff725e;
 }
-
-.wrapper {
-  width: 1250px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 
 .show-container {
   opacity: 0;
@@ -56,27 +48,25 @@ a {
   0% {
     stroke-dasharray: 150 30;
     stroke-dashoffset: 300;
-  } 80% {
+  }
+  80% {
     stroke-dasharray: 800 30;
     stroke-dashoffset: 0;
-  } 100% {
+  }
+  100% {
     fill-opacity: 1;
   }
 }
 
-
 @keyframes animeLeft {
-  
   to {
     opacity: initial;
     transform: translateZ(0);
   }
-
 }
 
-
 ::-webkit-scrollbar {
-  width: .4rem;
+  width: 0.4rem;
 }
 
 ::-webkit-scrollbar-track {
@@ -85,10 +75,8 @@ a {
 
 ::-webkit-scrollbar-thumb {
   background: var(--primary-color);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
-
-
 
 .swiper-pagination .swiper-pagination-bullet {
   background: transparent;
@@ -98,16 +86,13 @@ a {
   height: 5px;
 }
 
-
-.swiper-pagination .swiper-pagination-bullet-active  {
+.swiper-pagination .swiper-pagination-bullet-active {
   background: var(--primary-color);
   width: 3rem;
   border-radius: 0;
   height: 5px;
   border: 0;
-
 }
-
 
 .swiper-button-prev,
 .swiper-button-next {
@@ -115,16 +100,16 @@ a {
 }
 
 input[type="color"] {
-	-webkit-appearance: none;
-	border: none;
-	width: 32px;
+  -webkit-appearance: none;
+  border: none;
+  width: 32px;
   height: 32px;
-  border-radius: .5rem;
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+  border-radius: 0.5rem;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
 }
 input[type="color"]::-webkit-color-swatch-wrapper {
-	padding: 0;
+  padding: 0;
 }
 input[type="color"]::-webkit-color-swatch {
-	border: none;
+  border: none;
 }

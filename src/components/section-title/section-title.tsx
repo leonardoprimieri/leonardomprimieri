@@ -1,10 +1,13 @@
-import React from 'react';
+import { ReactNode } from "react";
+import "./style.css";
 
-import './style.css';
+type Props = {
+  children: ReactNode;
+};
 
-const SectionTitle = ({ children }) => {
+const SectionTitle = ({ children }: Props) => {
   return (
-    <div className="section-name">
+    <div className='section-name'>
       <span>{children}</span>
       <hr />
     </div>

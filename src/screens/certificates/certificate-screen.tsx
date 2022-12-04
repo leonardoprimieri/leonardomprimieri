@@ -12,7 +12,7 @@ const Certificates = () => {
       }}
     >
       <SectionTitle>Certificados</SectionTitle>
-      <Swiper data={certificates} />
+      <Swiper data={certificates as any} />
     </div>
   );
 };

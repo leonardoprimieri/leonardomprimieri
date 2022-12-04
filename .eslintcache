@@ -1,1 +1,39 @@
-[{"/home/leonardo/development/my-projects/leonardomprimieri/src/components/SideBar/SideBar.js":"1","/home/leonardo/development/my-projects/leonardomprimieri/src/index.js":"2"},{"size":4335,"mtime":1670164430002,"results":"3","hashOfConfig":"4"},{"size":151,"mtime":1670164524354,"results":"5","hashOfConfig":"4"},{"filePath":"6","messages":"7","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0},"10u76hi",{"filePath":"8","messages":"9","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0},"/home/leonardo/development/my-projects/leonardomprimieri/src/components/SideBar/SideBar.js",[],"/home/leonardo/development/my-projects/leonardomprimieri/src/index.js",[]]
+[
+  {
+    "/home/leonardo/development/my-projects/leonardomprimieri/src/components/SideBar/SideBar.js": "1",
+    "/home/leonardo/development/my-projects/leonardomprimieri/src/index.js": "2"
+  },
+  {
+    "size": 4335,
+    "mtime": 1670164430002,
+    "results": "3",
+    "hashOfConfig": "4"
+  },
+  {
+    "size": 151,
+    "mtime": 1670164524354,
+    "results": "5",
+    "hashOfConfig": "4"
+  },
+  {
+    "filePath": "6",
+    "messages": "7",
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  "10u76hi",
+  {
+    "filePath": "8",
+    "messages": "9",
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  "/home/leonardo/development/my-projects/leonardomprimieri/src/components/SideBar/SideBar.js",
+  [],
+  "/home/leonardo/development/my-projects/leonardomprimieri/src/index.js",
+  []
+]

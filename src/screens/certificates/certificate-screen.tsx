@@ -7,11 +7,9 @@ const Certificates = () => {
   return (
     <div
       className='main-certificates show-container'
-      style={
-        {
-          // backgroundImage: `url("${medal}")`,
-        }
-      }
+      style={{
+        backgroundImage: `url(./images/svg/medalha.png)`,
+      }}
     >
       <SectionTitle>Certificados</SectionTitle>
       <Swiper data={certificates} />

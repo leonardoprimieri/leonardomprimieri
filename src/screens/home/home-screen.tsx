@@ -1,7 +1,5 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
-// import { ReactComponent as Hero } from "../../assets/svg/guy-coding.svg";
-// import wave from "../../assets/svg/wave.png";
 import ReactTypingEffect from "react-typing-effect";
 
 import { FaEye, FaGithub } from "react-icons/fa";
@@ -13,20 +11,19 @@ import "./style.css";
 const Home = () => {
   const { setLinkClicked } = useContext<any>(TransitionScreenContext);
 
+  const typeName = "Leonardo M. Primieri";
   return (
     <div
       className='full-screen show-container'
-      style={
-        {
-          // backgroundImage: `url("${wave}")`,
-        }
-      }
+      style={{
+        backgroundImage: `url("images/svg/wave.png")`,
+      }}
     >
       <section className='home-main__content' id='home'>
         <div className='main-content_wrapper'>
           <div className='main-content__left'>
             <h1>
-              {/* <ReactTypingEffect text={["Leonardo M. Primieri"]} typingDelay='2000' staticText /> */}
+              <ReactTypingEffect text={typeName} typingDelay={400} />
             </h1>
             <p>Desenvolvedor Front End.</p>
             <div className='content-left__buttons'>
@@ -45,7 +42,7 @@ const Home = () => {
             </div>
           </div>
           <div className='main-content__right'>
-            {/* <Hero className='hero-home' fill='black' /> */}
+            <img className='hero-home' src='/images/svg/guy-coding.svg' />
           </div>
         </div>
       </section>

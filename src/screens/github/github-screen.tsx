@@ -3,7 +3,7 @@ import Tilt from "react-parallax-tilt";
 
 import "./style.css";
 
-// import github from "../../assets/svg/github.png";
+// import github from "../../";
 import SectionTitle from "../../components/section-title/section-title";
 import RepoCard from "../../components/repo-card/repo-card";
 
@@ -26,11 +26,9 @@ const GitHub = () => {
     <div
       className='repo-main show-container'
       id='github'
-      style={
-        {
-          // backgroundImage: `url("${github}")`,
-        }
-      }
+      style={{
+        backgroundImage: `url(/images/svg/github.png)`,
+      }}
     >
       <SectionTitle>Repositórios</SectionTitle>
       <div className='repo-main__content'>

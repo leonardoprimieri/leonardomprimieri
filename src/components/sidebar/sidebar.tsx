@@ -25,8 +25,7 @@ const SideBar = ({ mobile }: Props) => {
       <div className='aside-content'>
         <div className='aside-logo'>
           <NavLink to='/' onClick={handleLinkClick} activeClassName='active-menu'>
-            <img src='../../assets/svg/logo.svg' id='Logo' />
-            <span id='span-name'>eonardo</span>
+            <img src='/images/svg/logo.svg' />
           </NavLink>
         </div>
         <nav>

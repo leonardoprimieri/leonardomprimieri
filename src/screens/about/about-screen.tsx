@@ -1,18 +1,14 @@
 import SectionTitle from "../../components/section-title/section-title";
 
-// import wave from "../../assets/svg/wave-about.png";
-
 import "./style.css";
 
 const About = () => {
   return (
     <div
       className='full-screen full-screen__about'
-      style={
-        {
-          // backgroundImage: `url("${wave}")`,
-        }
-      }
+      style={{
+        backgroundImage: `url("images/svg/wave-about.png")`,
+      }}
     >
       <section className='about-main show-container' id='about'>
         <SectionTitle>Sobre</SectionTitle>

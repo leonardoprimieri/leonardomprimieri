@@ -13,11 +13,11 @@
   width: 50px;
   z-index: 99999999999;
   display: none;
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
 
-.menu-area svg {
+.menu-area img {
   width: 100%;
   height: 1rem;
 }

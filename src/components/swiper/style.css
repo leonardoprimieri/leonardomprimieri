@@ -70,8 +70,13 @@ span.span-sold__project {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   margin-top: 2.1rem;
+  flex-direction: column;
+}
+
+.lm-slide__techs_container {
+  display: flex;
+  margin-top: 1rem;
 }
 
 .lm-slide__techs h2 {
@@ -84,14 +89,14 @@ span.span-sold__project {
 }
 
 .tech-item {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: flex-start;
+  display: flex;
+  justify-content: center;
   align-items: center;
   border-radius: 0.5rem;
-  padding: 1rem 2rem;
+  padding: 2rem;
   margin: 0.5rem;
-  border: 1px solid var(--primary-color);
+  width: 30px;
+  height: 30px;
   background: var(--primary-color);
 }
 

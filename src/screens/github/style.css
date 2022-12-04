@@ -6,16 +6,16 @@
   padding: 10rem;
   background-repeat: no-repeat;
   background-position: -234px -275px;
-
 }
-
 
 .repo-main__content {
   margin: 0 auto;
   width: 80%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   gap: 1rem;
   justify-content: center;
   padding: 2rem;
+  height: 600px;
+  overflow: scroll;
 }

@@ -26,7 +26,7 @@
   width: 100%;
 }
 
-.main-content__right svg {
+.main-content__right img {
   width: 100%;
 }
 
@@ -69,7 +69,7 @@
   align-items: center;
 }
 
-.button svg {
+.button img {
   margin: 0 0.3rem;
 }
 
@@ -97,7 +97,7 @@
   left: 50%;
 }
 
-.home-main__footer svg {
+.home-main__footer img {
   height: 50%;
   cursor: pointer;
 }
@@ -111,7 +111,7 @@
     flex-direction: column;
   }
 
-  .main-content__right svg {
+  .main-content__right img {
     min-width: 50%;
     margin-top: -9rem;
   }
@@ -143,7 +143,7 @@
     margin-left: -5px;
   }
 
-  .main-content__right svg {
+  .main-content__right img {
     min-width: 50%;
   }
 }

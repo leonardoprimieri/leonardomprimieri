@@ -1,18 +1,20 @@
-import './style.css';
+import "./style.css";
 
-import gif from '../../assets/svg/gif.gif';
+type Props = {
+  transition: boolean;
+};
 
-const TransitionScreen = ({ transition }) => {
+const TransitionScreen = ({ transition }: Props) => {
   return (
     <div
-      className="transition-screen"
+      className='transition-screen'
       style={
-        transition === false
+        !transition
           ? { animation: `hide1 1s ease forwards` }
-          : { animation: 'hide3 1s ease forwards' }
+          : { animation: "hide3 1s ease forwards" }
       }
     >
-      <img src={gif} alt="michael doing a beauty thing" />
+      <img src='/images/svg/gif.gif' alt='michael doing a beauty thing' />
     </div>
   );
 };

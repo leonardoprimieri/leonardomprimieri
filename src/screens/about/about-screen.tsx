@@ -1,0 +1,48 @@
+import SectionTitle from "../../components/section-title/section-title";
+
+// import wave from "../../assets/svg/wave-about.png";
+
+import "./style.css";
+
+const About = () => {
+  return (
+    <div
+      className='full-screen full-screen__about'
+      style={
+        {
+          // backgroundImage: `url("${wave}")`,
+        }
+      }
+    >
+      <section className='about-main show-container' id='about'>
+        <SectionTitle>Sobre</SectionTitle>
+        <div className='about-main__content'>
+          <div className='about-content__left'>
+            <p>
+              Meu nome é Leonardo Merlo Primieri, estudante de Front End há 2 anos. Moro em Passo
+              Fundo - RS estou fazendo ciências da computação na IMED e sou Dev Front End na{" "}
+              <a
+                style={{ color: "var(--primary-color)" }}
+                href='https://www.whydea.com.br/'
+                target='_blank'
+                rel='noreferrer'
+              >
+                Whydea
+              </a>
+              . Seja bem vindo ao meu portfólio!
+            </p>
+          </div>
+          <div className='about-content__right'>
+            <div className='father-circle'>
+              <div className='son-circle'>
+                <img src='https://avatars.githubusercontent.com/u/59492647?v=4' alt='Leonardo' />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default About;

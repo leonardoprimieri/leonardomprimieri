@@ -8,7 +8,7 @@
     </g>
     <path className="lp-logo" id="Caminho_4-2" data-name="Caminho 4" d="M576.564,361.233" transform="translate(-506.909 -251.484)" fill="none" stroke="#707070" stroke-width="0.5"/>
   </g>
-  <g id="L" transform="translate(38.652 20.585)">
+  <g id="L" transform="translate(38.652 20.585)"> 
     <g id="Componente_1_1" data-name="Componente 1 – 1" transform="translate(0 84.301)">
       <path className="lp-logo" id="Caminho_3" data-name="Caminho 3" d="M576.867,364.892l-27.4,26.8H630.02l-27.4-26.8Z" transform="translate(-549.466 -364.892)" fill="#fff"/>
     </g>

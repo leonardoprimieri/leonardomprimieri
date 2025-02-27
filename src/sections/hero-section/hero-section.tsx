@@ -22,13 +22,15 @@ export function HeroSection() {
         </BlurFade>
       </div>
 
-      <Image
-        width={160}
-        height={160}
-        className="w-40 h-40 rounded-full"
-        src="https://github.com/leonardoprimieri.png"
-        alt="Leonardo Primieri"
-      />
+      <BlurFade delay={BLUR_FADE_BASE_DELAY * 2} inView>
+        <Image
+          width={160}
+          height={160}
+          className="w-40 h-40 rounded-full"
+          src="https://github.com/leonardoprimieri.png"
+          alt="Leonardo Primieri"
+        />
+      </BlurFade>
     </section>
   );
 }

@@ -1,13 +1,14 @@
 import { BlurFade } from "~/components/magicui/blur-fade";
 import { HightLightText } from "./components/hightlight-text/hightlight-text";
 import { BLUR_FADE_BASE_DELAY } from "~/constants/blur-fade-base-delay.const";
+import { SectionTitle } from "~/components/section-title/section-title";
 
 export function AboutSection() {
   return (
     <section className="flex justify-center flex-col items-start">
       <div>
         <BlurFade delay={BLUR_FADE_BASE_DELAY * 3}>
-          <h3 className="text-2xl font-semibold underline">About Me</h3>
+          <SectionTitle>About Me</SectionTitle>
         </BlurFade>
         <BlurFade delay={BLUR_FADE_BASE_DELAY * 4}>
           <p className="max-w-2xl text-pretty text-sm text-muted-foreground">

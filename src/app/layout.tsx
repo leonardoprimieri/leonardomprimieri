@@ -20,7 +20,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} antialiased max-w-7xl mx-auto`}>
+      <body
+        className={`${geistSans.variable} antialiased max-w-5xl p-12 mx-auto`}
+      >
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

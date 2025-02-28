@@ -79,7 +79,7 @@ export function ExpandableCards({ cards, title }: Props) {
             <motion.div
               layoutId={`card-${active.title}-${id}`}
               ref={ref}
-              className="w-full max-w-[500px]  h-full md:h-fit md:max-h-[90%]  flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-hidden"
+              className="w-full max-w-[500px]  h-full md:h-fit md:max-h-[90%]  flex flex-col bg-accent  sm:rounded-3xl overflow-hidden"
             >
               <div>
                 <div className="flex justify-between items-start p-4">

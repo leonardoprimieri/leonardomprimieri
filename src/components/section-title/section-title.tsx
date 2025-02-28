@@ -7,7 +7,12 @@ type Props = PropsWithChildren<{
 
 export function SectionTitle({ children, className }: Props) {
   return (
-    <h3 className={cn("text-2xl font-semibold underline mb-4", className)}>
+    <h3
+      className={cn(
+        "text-2xl font-semibold underline font-title mb-4",
+        className
+      )}
+    >
       {children}
     </h3>
   );

@@ -7,12 +7,10 @@ import { MyWorkExperienceSection } from "~/sections/my-work-experience-section/m
 export default function Home() {
   return (
     <>
-      <HeroSection />
-      <AboutSection />
-      <div className="mt-4">
+      <div className="flex flex-col gap-4">
+        <HeroSection />
+        <AboutSection />
         <MyWorkExperienceSection />
-      </div>
-      <div className="mt-4">
         <EducationSection />
       </div>
       <div className="sticky bottom-12">

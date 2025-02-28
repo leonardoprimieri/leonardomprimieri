@@ -173,7 +173,7 @@ export function ExpandableCards({ cards, title }: Props) {
                 </motion.button>
               </motion.div>
               {card !== cards[cards.length - 1] && (
-                <Separator className="my-4" />
+                <Separator className="my-4 h-px w-full bg-accent" />
               )}
             </>
           ))}

@@ -1,11 +1,16 @@
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
+import { Geist, Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "~/components/theme/theme-provider";
 import { PostHogProvider } from "~/providers/posthog-provider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
 });
 
@@ -22,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} antialiased max-w-5xl p-12 mx-auto`}
+        className={`${geistSans.variable} ${inter.variable} font-sans antialiased max-w-4xl p-12 mx-auto`}
       >
         <ThemeProvider
           attribute="class"

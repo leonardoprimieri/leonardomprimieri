@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${inter.variable} font-sans antialiased max-w-4xl p-12 mx-auto`}
+        className={`${geistSans.variable} ${inter.variable} font-sans antialiased max-w-6xl p-12 mx-auto`}
       >
         <ThemeProvider
           attribute="class"

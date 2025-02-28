@@ -129,7 +129,7 @@ export function ExpandableCards({ cards, title }: Props) {
           </div>
         ) : null}
       </AnimatePresence>
-      <BlurFade delay={BLUR_FADE_BASE_DELAY * 5} inView>
+      <BlurFade delay={BLUR_FADE_BASE_DELAY * 5}>
         <SectionTitle>{title}</SectionTitle>
         <ul className="w-full gap-4">
           {cards.map((card) => (

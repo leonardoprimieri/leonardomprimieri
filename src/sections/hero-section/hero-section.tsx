@@ -6,23 +6,19 @@ export function HeroSection() {
   return (
     <section className="flex flex-col-reverse lg:flex-row gap-4 items-center justify-between">
       <div className="flex flex-col">
-        <BlurFade delay={BLUR_FADE_BASE_DELAY} inView>
+        <BlurFade delay={BLUR_FADE_BASE_DELAY}>
           <h2 className="text-3xl font-semibold font-title tracking-tighter sm:text-5xl xl:text-6xl/none">
             Hi, I&apos;m Leonardo 👋
           </h2>
         </BlurFade>
-        <BlurFade
-          delay={BLUR_FADE_BASE_DELAY * 2}
-          inView
-          className="mt-2 max-w-3xl"
-        >
+        <BlurFade delay={BLUR_FADE_BASE_DELAY * 2} className="mt-2 max-w-3xl">
           <span className="text-pretty text-xl lg:text-2xl tracking-tighter">
             Computer Science Bachelor and a Frontend Developer.
           </span>
         </BlurFade>
       </div>
 
-      <BlurFade delay={BLUR_FADE_BASE_DELAY * 2} inView>
+      <BlurFade delay={BLUR_FADE_BASE_DELAY * 2}>
         <Image
           width={128}
           height={128}

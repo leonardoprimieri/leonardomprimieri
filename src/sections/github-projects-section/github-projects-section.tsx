@@ -2,60 +2,17 @@ import { BlurFade } from "~/components/magicui/blur-fade";
 import { Marquee } from "~/components/magicui/marquee";
 import { SectionTitle } from "~/components/section-title/section-title";
 import { BLUR_FADE_BASE_DELAY } from "~/constants/blur-fade-base-delay.const";
-import { cn } from "~/lib/utils";
-
-type GetGithubProjectsResponse = {
-  id: number;
-  name: string;
-  description: string;
-  stargazers_count: number;
-  owner: {
-    login: string;
-    avatar_url: string;
-  };
-}[];
-
-async function fetchGithubPinnedProjects() {
-  const response = await fetch(
-    "https://api.github.com/users/leonardoprimieri/repos"
-  );
-  return (await response.json()) as GetGithubProjectsResponse;
-}
-
-const RepoCard = ({
-  name,
-  body,
-}: {
-  img: string;
-  name: string;
-  username: string;
-  body: string;
-}) => {
-  return (
-    <figure
-      className={cn(
-        "relative h-full w-48 cursor-pointer overflow-hidden rounded-xl border p-4",
-        "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
-        "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]"
-      )}
-    >
-      <div className="flex flex-row items-center gap-2">
-        <div className="flex flex-col">
-          <figcaption className="text-sm font-medium dark:text-white">
-            {name}
-          </figcaption>
-        </div>
-      </div>
-      <blockquote className="mt-2 text-sm">{body}</blockquote>
-    </figure>
-  );
-};
+import { getGithubPinnedProjects } from "./service/get-github-pinned-projects-service";
+import { RepoCard } from "./components/repo-card/repo-card";
 
 export async function GithubProjectsSection() {
-  const githubProjects = await fetchGithubPinnedProjects();
+  const githubProjects = await getGithubPinnedProjects();
   const onlyStarredRepos = githubProjects.filter(
     (project) => project.stargazers_count > 0
   );
+
+  const firstRow = onlyStarredRepos.slice(0, 3);
+  const secondRow = onlyStarredRepos.slice(3, 6);
 
   return (
     <BlurFade delay={BLUR_FADE_BASE_DELAY * 6}>
@@ -63,13 +20,23 @@ export async function GithubProjectsSection() {
         <SectionTitle>Github Projects I&apos;m proud of</SectionTitle>
         <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
           <Marquee pauseOnHover className="[--duration:20s]">
-            {onlyStarredRepos.map((project) => (
+            {firstRow.map((project) => (
               <RepoCard
                 key={project.id}
                 body={project.description}
-                img={project.owner.avatar_url}
                 name={project.name}
-                username={project.owner.login}
+                html_url={project.html_url}
+              />
+            ))}
+          </Marquee>
+
+          <Marquee pauseOnHover className="[--duration:20s]">
+            {secondRow.map((project) => (
+              <RepoCard
+                key={project.id}
+                body={project.description}
+                name={project.name}
+                html_url={project.html_url}
               />
             ))}
           </Marquee>

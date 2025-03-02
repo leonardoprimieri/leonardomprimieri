@@ -13,7 +13,7 @@ export function HeroSection() {
         </BlurFade>
         <BlurFade delay={BLUR_FADE_BASE_DELAY * 2} className="mt-2 max-w-3xl">
           <span className="text-pretty text-xl lg:text-2xl tracking-tighter">
-            Computer Science Bachelor and a Frontend Developer.
+            Computer Science Bachelor and Senior Frontend Developer.
           </span>
         </BlurFade>
       </div>

@@ -20,8 +20,8 @@ export function HeroSection() {
 
       <BlurFade delay={BLUR_FADE_BASE_DELAY * 2}>
         <Image
-          width={128}
-          height={128}
+          width={130}
+          height={130}
           className="w-32 h-32 rounded-full"
           src="https://github.com/leonardoprimieri.png"
           alt="Leonardo Primieri"

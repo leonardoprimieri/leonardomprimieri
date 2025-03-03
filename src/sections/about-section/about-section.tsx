@@ -11,7 +11,7 @@ export function AboutSection() {
           <SectionTitle>About</SectionTitle>
         </BlurFade>
         <BlurFade delay={BLUR_FADE_BASE_DELAY * 4}>
-          <p className="max-w-2xl text-pretty text-sm text-muted-foreground">
+          <p className="text-pretty text-sm text-muted-foreground">
             I&apos;m a <HightLightText>Senior React Developer</HightLightText>{" "}
             with 5 years of experience building complex web applications,
             including payment processing platforms and BAAS services. With a

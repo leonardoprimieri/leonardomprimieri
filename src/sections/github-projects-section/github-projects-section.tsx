@@ -1,21 +1,32 @@
 import { BlurFade } from "~/components/magicui/blur-fade";
 import { Marquee } from "~/components/magicui/marquee";
 import { SectionTitle } from "~/components/section-title/section-title";
-import { BLUR_FADE_BASE_DELAY } from "~/constants/blur-fade-base-delay.const";
-import { getGithubPinnedProjects } from "./service/get-github-pinned-projects-service";
+import { getGithubPinnedProjects } from "./services/get-github-pinned-projects-service";
 import { RepoCard } from "./components/repo-card/repo-card";
+import { unstable_cache } from "next/cache";
 
 export async function GithubProjectsSection() {
-  const githubProjects = await getGithubPinnedProjects();
-  const onlyStarredRepos = githubProjects.filter(
-    (project) => project.stargazers_count > 0
+  const githubProjects = unstable_cache(
+    async () => {
+      const githubProjects = await getGithubPinnedProjects();
+      const onlyStarredRepos = githubProjects.filter(
+        (project) => project.stargazers_count > 0
+      );
+      return onlyStarredRepos;
+    },
+    ["githubProjects"],
+    {
+      revalidate: 60 * 60 * 24, // 24 hours,
+    }
   );
 
-  const firstRow = onlyStarredRepos.slice(0, 3);
-  const secondRow = onlyStarredRepos.slice(3, 6);
+  const repos = await githubProjects();
+
+  const firstRow = repos.slice(0, Math.ceil(repos.length / 2));
+  const secondRow = repos.slice(Math.ceil(repos.length / 2), repos.length);
 
   return (
-    <BlurFade delay={BLUR_FADE_BASE_DELAY * 6}>
+    <BlurFade inView>
       <section>
         <SectionTitle>Github Projects I&apos;m proud of</SectionTitle>
         <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">

@@ -1,16 +1,15 @@
 import { BlurFade } from "~/components/magicui/blur-fade";
 import { HightLightText } from "./components/hightlight-text/hightlight-text";
-import { BLUR_FADE_BASE_DELAY } from "~/constants/blur-fade-base-delay.const";
 import { SectionTitle } from "~/components/section-title/section-title";
 
 export function AboutSection() {
   return (
     <section className="flex justify-center flex-col items-start">
       <div>
-        <BlurFade delay={BLUR_FADE_BASE_DELAY * 3}>
+        <BlurFade inView>
           <SectionTitle>About</SectionTitle>
         </BlurFade>
-        <BlurFade delay={BLUR_FADE_BASE_DELAY * 4}>
+        <BlurFade inView>
           <p className="text-pretty text-sm text-muted-foreground">
             I&apos;m a <HightLightText>Senior React Developer</HightLightText>{" "}
             with 5 years of experience building complex web applications,

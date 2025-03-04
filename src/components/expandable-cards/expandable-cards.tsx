@@ -1,7 +1,6 @@
 import { Separator } from "@radix-ui/react-separator";
 import { AnimatePresence, motion } from "framer-motion";
-import { useState, useRef, useId, useEffect } from "react";
-import { BLUR_FADE_BASE_DELAY } from "~/constants/blur-fade-base-delay.const";
+import React, { useState, useRef, useId, useEffect } from "react";
 import { useOutsideClick } from "~/hooks/use-outside-click";
 import { BlurFade } from "../magicui/blur-fade";
 import { SectionTitle } from "../section-title/section-title";
@@ -129,11 +128,11 @@ export function ExpandableCards({ cards, title }: Props) {
           </div>
         ) : null}
       </AnimatePresence>
-      <BlurFade delay={BLUR_FADE_BASE_DELAY * 5}>
+      <BlurFade inView>
         <SectionTitle>{title}</SectionTitle>
         <ul className="w-full gap-4">
-          {cards.map((card) => (
-            <>
+          {cards.map((card, index) => (
+            <React.Fragment key={index}>
               <motion.div
                 layoutId={`card-${card.title}-${id}`}
                 key={`card-${card.title}-${id}`}
@@ -175,7 +174,7 @@ export function ExpandableCards({ cards, title }: Props) {
               {card !== cards[cards.length - 1] && (
                 <Separator className="my-4 h-px w-full bg-accent" />
               )}
-            </>
+            </React.Fragment>
           ))}
         </ul>
       </BlurFade>

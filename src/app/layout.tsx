@@ -3,6 +3,8 @@ import { Geist, Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "~/components/theme/theme-provider";
 import { PostHogProvider } from "~/providers/posthog-provider";
+import { ReactQueryProvider } from "~/providers/react-query-provider";
+import { Toaster } from "~/components/ui/sonner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,18 +27,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${inter.variable} font-sans antialiased max-w-6xl p-12 mx-auto`}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <PostHogProvider>{children}</PostHogProvider>
-        </ThemeProvider>
+        <ReactQueryProvider>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <PostHogProvider>
+              <main>{children}</main>
+            </PostHogProvider>
+            <Toaster />
+          </ThemeProvider>
+        </ReactQueryProvider>
       </body>
     </html>
   );

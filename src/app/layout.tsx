@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "~/components/theme/theme-provider";
 import { PostHogProvider } from "~/providers/posthog-provider";
 import { ReactQueryProvider } from "~/providers/react-query-provider";
+import { Toaster } from "~/components/ui/sonner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,7 +38,10 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <PostHogProvider>{children}</PostHogProvider>
+            <PostHogProvider>
+              <main>{children}</main>
+            </PostHogProvider>
+            <Toaster />
           </ThemeProvider>
         </ReactQueryProvider>
       </body>

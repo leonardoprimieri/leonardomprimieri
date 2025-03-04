@@ -12,6 +12,13 @@ import {
   GetInTouchFormValues,
   GetInTouchSchema,
 } from "./validation/get-in-touch-form-validation";
+import { toast } from "sonner";
+import {
+  HoverCard,
+  HoverCardContent,
+  HoverCardTrigger,
+} from "~/components/ui/hover-card";
+import { InfoIcon } from "lucide-react";
 
 export function GetInTouchSection() {
   const form = useForm({
@@ -31,6 +38,9 @@ export function GetInTouchSection() {
       {
         onSuccess: () => {
           form.reset();
+          toast.success(
+            "Message sent successfully. I'll get back to you soon."
+          );
         },
       }
     );
@@ -48,7 +58,7 @@ export function GetInTouchSection() {
         </p>
 
         <FormProvider {...form}>
-          <form onSubmit={form.handleSubmit(onSubmit)}>
+          <form onSubmit={form.handleSubmit(onSubmit)} className="my-8">
             <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
               <LabelInputContainer>
                 <Label htmlFor="firstName">First name</Label>
@@ -94,7 +104,18 @@ export function GetInTouchSection() {
               )}
             </LabelInputContainer>
             <LabelInputContainer className="mb-4">
-              <Label htmlFor="email">Message</Label>
+              <div className="flex gap-2 items-center">
+                <Label htmlFor="email">Message</Label>
+                <HoverCard openDelay={100}>
+                  <HoverCardTrigger>
+                    <InfoIcon size={16} />
+                  </HoverCardTrigger>
+                  <HoverCardContent>
+                    Your message should be at least 10 characters long.
+                  </HoverCardContent>
+                </HoverCard>
+              </div>
+
               <Textarea
                 id="message"
                 placeholder="Hi, I would like to talk about..."

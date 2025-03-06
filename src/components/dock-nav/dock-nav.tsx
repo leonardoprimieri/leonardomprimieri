@@ -15,6 +15,7 @@ import { cn } from "~/lib/utils";
 import { buttonVariants } from "../ui/button";
 import { Separator } from "../ui/separator";
 import { ModeToggle } from "../theme/theme-toggle";
+import { LocaleToggle } from "../locale-toggle/locale-toggle";
 
 export type IconProps = React.HTMLAttributes<SVGElement>;
 
@@ -126,6 +127,16 @@ export function DockNav() {
               </TooltipTrigger>
               <TooltipContent>
                 <p>Theme</p>
+              </TooltipContent>
+            </Tooltip>
+          </DockIcon>
+          <DockIcon>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <LocaleToggle />
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>Language</p>
               </TooltipContent>
             </Tooltip>
           </DockIcon>

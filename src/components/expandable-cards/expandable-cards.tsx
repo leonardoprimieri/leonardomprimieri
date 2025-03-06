@@ -146,7 +146,7 @@ export function ExpandableCards({ cards, title }: Props) {
                       height={100}
                       src={card.src}
                       alt={card.title}
-                      className="h-40 w-40 md:h-14 md:w-14 mx-auto rounded-lg object-cover object-top"
+                      className="h-28 w-28 md:h-14 md:w-14 mx-auto rounded-full object-cover object-top"
                     />
                   </motion.div>
                   <div>

@@ -19,13 +19,13 @@ export default async function Home(props: {
   return (
     <>
       <div className="flex flex-col gap-12">
-        <HeroSection dictionary={dictionary} />
-        <AboutSection />
-        <MyWorkExperienceSection />
-        <EducationSection />
-        <GithubProjectsSection />
-        <TechStackSection />
-        <GetInTouchSection />
+        <HeroSection dictionary={dictionary.hero} />
+        <AboutSection dictionary={dictionary.about} />
+        <MyWorkExperienceSection dictionary={dictionary["work-experience"]} />
+        <EducationSection dictionary={dictionary.education} />
+        <GithubProjectsSection dictionary={dictionary.github} />
+        <TechStackSection dictionary={dictionary.techs} />
+        <GetInTouchSection dictionary={dictionary["get-in-touch"]} />
       </div>
       <div className="sticky bottom-12">
         <DockNav />

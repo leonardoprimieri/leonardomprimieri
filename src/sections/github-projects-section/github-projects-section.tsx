@@ -4,8 +4,13 @@ import { SectionTitle } from "~/components/section-title/section-title";
 import { getGithubPinnedProjects } from "./services/get-github-pinned-projects-service";
 import { RepoCard } from "./components/repo-card/repo-card";
 import { unstable_cache } from "next/cache";
+import { getDictionary } from "~/helpers/get-dictionaries";
 
-export async function GithubProjectsSection() {
+export async function GithubProjectsSection({
+  dictionary,
+}: {
+  dictionary: Awaited<ReturnType<typeof getDictionary>>["github"];
+}) {
   const githubProjects = unstable_cache(
     async () => {
       const githubProjects = await getGithubPinnedProjects();
@@ -28,7 +33,7 @@ export async function GithubProjectsSection() {
   return (
     <BlurFade inView>
       <section>
-        <SectionTitle>Github Projects I&apos;m proud of</SectionTitle>
+        <SectionTitle>{dictionary.title}</SectionTitle>
         <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
           <Marquee pauseOnHover className="[--duration:20s]">
             {firstRow.map((project) => (

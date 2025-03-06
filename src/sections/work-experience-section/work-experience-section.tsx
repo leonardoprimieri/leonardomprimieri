@@ -2,9 +2,14 @@
 import { Card } from "~/components/expandable-cards/types/card";
 import { HightLightText } from "../about-section/components/hightlight-text/hightlight-text";
 import { ExpandableCards } from "~/components/expandable-cards/expandable-cards";
+import { getDictionary } from "~/helpers/get-dictionaries";
 
-export function MyWorkExperienceSection() {
-  return <ExpandableCards title="Work Experience" cards={cards} />;
+export function MyWorkExperienceSection({
+  dictionary,
+}: {
+  dictionary: Awaited<ReturnType<typeof getDictionary>>["work-experience"];
+}) {
+  return <ExpandableCards title={dictionary.title} cards={cards} />;
 }
 
 const cards: Card[] = [

@@ -2,5 +2,45 @@
   "hero": {
     "title": "Hi, I'm Leonardo",
     "subtitle": "Computer Science Bachelor and Senior Frontend Developer."
+  },
+  "about": {
+    "title": "About",
+    "description": "I'm a Senior React Developer with 5 years of experience building complex web applications, including payment processing platforms and BAAS services. With a Computer Science degree and expertise in React, Typescript, NextJS, Javascript, and various state management solutions, I create clean, high-quality code that scales. I thrive in fast-paced software house environments where I can tackle diverse projects and learn continuously. After successful roles in Brazil, I'm now seeking international opportunities to challenge myself and gain exposure to how larger companies approach development. I'm passionate about code quality, enjoy collaborative problem-solving, and have Advanced English communication skills."
+  },
+  "work-experience": {
+    "title": "Work Experience"
+  },
+  "education": {
+    "title": "Education"
+  },
+  "github": {
+    "title": "Github Projects I'm proud of"
+  },
+  "techs": {
+    "title": "Techs I use daily"
+  },
+  "get-in-touch": {
+    "title": "Get in touch",
+    "description": "Fill out the form below and I'll get back to you as soon as possible.",
+    "inputs": {
+      "name": {
+        "label": "Name",
+        "placeholder": "Your name"
+      },
+      "last-name": {
+        "label": "Last Name",
+        "placeholder": "Your last name"
+      },
+      "email-address": {
+        "label": "Email Address",
+        "placeholder": "Your email address"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Your message",
+        "tooltip": "Your message should be at least 10 characters long."
+      }
+    },
+    "submitButton": "Send"
   }
 }

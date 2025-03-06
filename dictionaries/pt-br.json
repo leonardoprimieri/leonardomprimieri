@@ -1,0 +1,46 @@
+{
+  "hero": {
+    "title": "Olá, eu sou Leonardo",
+    "subtitle": "Bacharel em Ciência da Computação e Desenvolvedor Frontend Sênior."
+  },
+  "about": {
+    "title": "Sobre",
+    "description": "Sou um Desenvolvedor React Sênior com 5 anos de experiência construindo aplicações web complexas, incluindo plataformas de processamento de pagamentos e serviços BAAS. Com formação em Ciência da Computação e expertise em React, Typescript, NextJS, Javascript e várias soluções de gerenciamento de estado, crio código limpo e de alta qualidade que escala. Prospero em ambientes de software house de ritmo acelerado, onde posso lidar com projetos diversos e aprender continuamente. Após papéis bem-sucedidos no Brasil, agora busco oportunidades internacionais para me desafiar e ganhar exposição a como empresas maiores abordam o desenvolvimento. Sou apaixonado por qualidade de código, gosto de resolver problemas de forma colaborativa e tenho habilidades de comunicação em inglês avançado."
+  },
+  "work-experience": {
+    "title": "Experiência Profissional"
+  },
+  "education": {
+    "title": "Formação"
+  },
+  "github": {
+    "title": "Projetos no Github que me orgulho"
+  },
+  "techs": {
+    "title": "Tecnologias que uso diariamente"
+  },
+  "get-in-touch": {
+    "title": "Entre em contato",
+    "description": "Preencha o formulário abaixo e eu retornarei o mais breve possível.",
+    "inputs": {
+      "name": {
+        "label": "Nome",
+        "placeholder": "Seu nome"
+      },
+      "last-name": {
+        "label": "Sobrenome",
+        "placeholder": "Seu sobrenome"
+      },
+      "email-address": {
+        "label": "Endereço de Email",
+        "placeholder": "Seu endereço de email"
+      },
+      "message": {
+        "label": "Mensagem",
+        "placeholder": "Sua mensagem",
+        "tooltip": "Sua mensagem deve ter pelo menos 10 caracteres."
+      }
+    },
+    "submitButton": "Enviar"
+  }
+}

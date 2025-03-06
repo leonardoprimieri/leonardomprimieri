@@ -1,9 +1,14 @@
 "use client";
 import { Card } from "~/components/expandable-cards/types/card";
 import { ExpandableCards } from "~/components/expandable-cards/expandable-cards";
+import { getDictionary } from "~/helpers/get-dictionaries";
 
-export function EducationSection() {
-  return <ExpandableCards cards={cards} title="Education" />;
+export function EducationSection({
+  dictionary,
+}: {
+  dictionary: Awaited<ReturnType<typeof getDictionary>>["education"];
+}) {
+  return <ExpandableCards cards={cards} title={dictionary.title} />;
 }
 
 const cards: Card[] = [

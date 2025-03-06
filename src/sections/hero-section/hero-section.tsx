@@ -12,12 +12,12 @@ export function HeroSection({
       <div className="flex flex-col">
         <BlurFade inView>
           <h2 className="text-3xl font-semibold font-title tracking-tighter sm:text-5xl xl:text-6xl/none">
-            {dictionary["hero"].title} 👋
+            {dictionary.title} 👋
           </h2>
         </BlurFade>
         <BlurFade inView className="mt-2 max-w-3xl">
           <span className="text-pretty text-xl lg:text-2xl tracking-tighter">
-            {dictionary["hero"].subtitle}
+            {dictionary.subtitle}
           </span>
         </BlurFade>
       </div>

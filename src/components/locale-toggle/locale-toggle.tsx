@@ -20,7 +20,7 @@ export function LocaleToggle() {
   const currentLocale = getCurrentLocale();
 
   const getNextLocale = (): Locale => {
-    return currentLocale === "en" ? "ptBR" : "en";
+    return currentLocale === "en" ? "pt-br" : "en";
   };
 
   const getRedirectedPathname = (locale: Locale): string => {

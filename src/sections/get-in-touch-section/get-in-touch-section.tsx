@@ -19,8 +19,13 @@ import {
   HoverCardTrigger,
 } from "~/components/ui/hover-card";
 import { InfoIcon } from "lucide-react";
+import { getDictionary } from "~/helpers/get-dictionaries";
 
-export function GetInTouchSection() {
+export function GetInTouchSection({
+  dictionary,
+}: {
+  dictionary: Awaited<ReturnType<typeof getDictionary>>["get-in-touch"];
+}) {
   const form = useForm({
     resolver: zodResolver(GetInTouchSchema),
     mode: "onBlur",
@@ -50,21 +55,22 @@ export function GetInTouchSection() {
     <BlurFade inView>
       <div className="w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input">
         <h2 className="font-bold text-xl text-neutral-800 dark:text-neutral-200">
-          Get in Touch
+          {dictionary.title}
         </h2>
-        <p className="text-neutral-600 text-sm max-w-sm mt-2 dark:text-neutral-300">
-          Fill out the form below and I&apos;ll get back to you as soon as
-          possible.
+        <p className="text-neutral-600 text-sm mt-2 dark:text-neutral-300">
+          {dictionary.description}
         </p>
 
         <FormProvider {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="my-8">
             <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
               <LabelInputContainer>
-                <Label htmlFor="firstName">First name</Label>
+                <Label htmlFor="firstName">
+                  {dictionary.inputs.name.label}
+                </Label>
                 <Input
                   id="firstName"
-                  placeholder="Jhon"
+                  placeholder={dictionary.inputs.name.placeholder}
                   type="text"
                   {...form.register("firstName")}
                 />
@@ -75,10 +81,12 @@ export function GetInTouchSection() {
                 )}
               </LabelInputContainer>
               <LabelInputContainer>
-                <Label htmlFor="lastName">Last name</Label>
+                <Label htmlFor="lastName">
+                  {dictionary.inputs["last-name"].label}
+                </Label>
                 <Input
                   id="lastName"
-                  placeholder="Doe"
+                  placeholder={dictionary.inputs["last-name"].placeholder}
                   type="text"
                   {...form.register("lastName")}
                 />
@@ -90,10 +98,12 @@ export function GetInTouchSection() {
               </LabelInputContainer>
             </div>
             <LabelInputContainer className="mb-4">
-              <Label htmlFor="email">Email Address</Label>
+              <Label htmlFor="email">
+                {dictionary.inputs["email-address"].label}
+              </Label>
               <Input
                 id="email"
-                placeholder="jhon@doe.com"
+                placeholder={dictionary.inputs["email-address"].placeholder}
                 type="email"
                 {...form.register("email")}
               />
@@ -105,20 +115,20 @@ export function GetInTouchSection() {
             </LabelInputContainer>
             <LabelInputContainer className="mb-4">
               <div className="flex gap-2 items-center">
-                <Label htmlFor="email">Message</Label>
+                <Label htmlFor="email">{dictionary.inputs.message.label}</Label>
                 <HoverCard openDelay={100}>
                   <HoverCardTrigger>
                     <InfoIcon size={16} />
                   </HoverCardTrigger>
                   <HoverCardContent>
-                    Your message should be at least 10 characters long.
+                    {dictionary.inputs.message.tooltip}
                   </HoverCardContent>
                 </HoverCard>
               </div>
 
               <Textarea
                 id="message"
-                placeholder="Hi, I would like to talk about..."
+                placeholder={dictionary.inputs.message.placeholder}
                 {...form.register("message")}
               />
               {form?.formState.errors?.message && (
@@ -132,7 +142,7 @@ export function GetInTouchSection() {
               type="submit"
               disabled={form.formState.isSubmitting || !form.formState.isValid}
             >
-              Get in Touch
+              {dictionary.submitButton}
               <BottomGradient />
             </button>
           </form>

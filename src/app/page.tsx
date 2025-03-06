@@ -4,6 +4,7 @@ import { EducationSection } from "~/sections/education-section/education-section
 import { GetInTouchSection } from "~/sections/get-in-touch-section/get-in-touch-section";
 import { GithubProjectsSection } from "~/sections/github-projects-section/github-projects-section";
 import { HeroSection } from "~/sections/hero-section/hero-section";
+import { TechStackSection } from "~/sections/tech-stack-section/tech-stack-section";
 import { MyWorkExperienceSection } from "~/sections/work-experience-section/work-experience-section";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
         <MyWorkExperienceSection />
         <EducationSection />
         <GithubProjectsSection />
+        <TechStackSection />
         <GetInTouchSection />
       </div>
       <div className="sticky bottom-12">

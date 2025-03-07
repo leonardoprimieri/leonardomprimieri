@@ -1,0 +1,314 @@
+{
+  "hero": {
+    "title": "Olá, eu sou Leonardo",
+    "subtitle": "Bacharel em Ciência da Computação e Desenvolvedor Frontend Sênior."
+  },
+  "about": {
+    "title": "Sobre",
+    "description": "Sou um Desenvolvedor React Sênior com 5 anos de experiência construindo aplicações web complexas, incluindo plataformas de processamento de pagamentos e serviços BAAS. Com formação em Ciência da Computação e expertise em React, Typescript, NextJS, Javascript e várias soluções de gerenciamento de estado, crio código limpo e de alta qualidade que escala. Prospero em ambientes de software house de ritmo acelerado, onde posso lidar com projetos diversos e aprender continuamente. Após papéis bem-sucedidos no Brasil, agora busco oportunidades internacionais para me desafiar e ganhar exposição a como empresas maiores abordam o desenvolvimento. Sou apaixonado por qualidade de código, gosto de resolver problemas de forma colaborativa e tenho habilidades de comunicação em inglês avançado."
+  },
+  "work-experience": {
+    "title": "Experiência Profissional",
+    "jobs": [
+      {
+        "description": "Mar 2023 - Presente · 2 yrs",
+        "title": "Wine Locals - Desenvolvedor React/Next",
+        "src": "/companies-logos/wine-locals.jpg",
+        "details": {
+          "description": "Responsável por manter e desenvolver novas funcionalidades na Wine Locals e Viva o RS",
+          "items-section": [
+            {
+              "title": "Atividades Técnicas",
+              "items": [
+                "Melhorei o SEO e o desempenho da página",
+                "Refatorei chamadas HTTP para usar react-query e implementar cache",
+                "Refatorei formulários usando react-hook-form para simplificar validação e manipulação de campos",
+                "Criei perfil e login de autenticação/autorização usando middleware do Next.JS",
+                "Contribuí para criar, projetar e refatorar o fluxo de compra com métodos de pagamento integrados (Cartão de Crédito e Pix)",
+                "Desenvolvi um aplicativo móvel React Native usando Expo"
+              ]
+            },
+            {
+              "title": "Performance",
+              "items": [
+                "Liderei a iniciativa de migrar do Webpack para o Vite em todos os projetos",
+                "Reduzi os tempos de compilação, melhorando a experiência do desenvolvedor",
+                "Diminuí o tempo de carregamento inicial para usuários finais implementando uma melhor divisão de código",
+                "Otimizei o tempo de execução do pipeline CI/CD, resultando em implantações mais rápidas"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "description": "Nov 2021 - Apr 2023 · 1 yr 6 mos",
+        "title": "Softo - DevTeam as a Service - Desenvolvedor React/Next",
+        "src": "/companies-logos/softodev_logo.jpeg",
+        "details": {
+          "description": "Trabalhei em vários sistemas dentro da empresa, listados abaixo:",
+          "items-section": [
+            {
+              "title": "Globalfy",
+              "link": "https://globalfy.com",
+              "items": [
+                "Criação de cartão virtual",
+                "Criação de cartão de débito",
+                "Criação de cartão de crédito",
+                "Realizar transferências Wire e ACH",
+                "Proteger cada ação do usuário com Authy e QR code pelo front-end",
+                "Listar e visualizar recibos de transferência, bem como cancelar e tentar refazê-los",
+                "Carregar documentos para validar a nova conta de usuário",
+                "Painel administrativo para criação de novos membros para o Banco"
+              ]
+            },
+            {
+              "title": "Gateway de Pagamento e Plataforma",
+              "items": [
+                "Criação e listagem de Cupons, Transferências, Produtos, Clientes, Links de Pagamento, Faturas e Assinaturas",
+                "Manutenção do sistema Hosted Checkout, manipulando cartão de crédito e informações de clientes"
+              ]
+            },
+            {
+              "title": "Design System",
+              "items": [
+                "Ajudei a equipe na criação de componentes usando Bit.dev e ReactJS"
+              ]
+            },
+            {
+              "title": "Softo Institutional Website",
+              "link": "https://sof.to/",
+              "items": [
+                "Criação de blog integrado com Strapi",
+                "Criação de telas para divulgação de serviços"
+              ]
+            },
+            {
+              "title": "F5 Academy",
+              "items": [
+                "Liderei a criação e desenvolvimento do projeto",
+                "Implementei Tailwind, React Hook Form e Zustand"
+              ]
+            },
+            {
+              "title": "Contribuições Especiais",
+              "items": [
+                "Implementei Cypress em pipelines de CI e CD",
+                "Melhorei o tempo de build e CI/CD substituindo o Webpack pelo Vite em todos os projetos da empresa"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "description": "Feb 2020 - Nov 2021 · 1 yr 10 mos",
+        "title": "Whydea - Desenvolvedor React/Next",
+        "src": "/companies-logos/whydea_logo.jpeg",
+        "details": {
+          "description": "Projetos em que trabalhei na empresa:",
+          "items-section": [
+            {
+              "title": "Plataforma de Publicação de Vídeos",
+              "items": [
+                "Criação de sistema de login e autenticação com Firebase",
+                "Criação e modelagem do banco de dados com Firebase",
+                "Fazendo a lista de vídeos, marcando-os como concluídos e mostrando a porcentagem que o usuário completou"
+              ]
+            },
+            {
+              "title": "Ecommerce - Mega Atacado PF",
+              "link": "https://megaatacadopf.com.br",
+              "items": [
+                "Listagem de produtos",
+                "Filtragem por categoria, nome, preço, mais vendidos, etc.",
+                "Ajudei a construir o backend com NodeJS e Express, criando uma rota para listar produtos, criar uma lista de favoritos, cálculos de frete, etc.",
+                "Ajudei na criação do aplicativo React Native"
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "education": {
+    "title": "Formação",
+    "items": [
+      {
+        "title": "Atitus - Bacharel em Ciência da Computação",
+        "duration": "2020 - 2024 · 4 anos",
+        "src": "/companies-logos/atituseducacao_logo.jpeg",
+        "details": {
+          "items-section": [
+            {
+              "title": "Formação Acadêmica",
+              "items": [
+                "Estudei algoritmos, estruturas de dados e engenharia de software",
+                "Desenvolvi uma base sólida em teoria e prática da ciência da computação",
+                "Projeto de conclusão de curso: PetCall - Aplicativo móvel para Agendamentos Veterinários Online, usando Expo e Firebase"
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "github": {
+    "title": "Projetos no Github que me orgulho"
+  },
+  "techs": {
+    "title": "Tecnologias",
+    "cards": [
+      {
+        "title": "Linguages",
+        "lucideIconName": "code-2",
+        "items": [
+          {
+            "name": "JavaScript",
+            "yearsOfExperience": "5 anos"
+          },
+          {
+            "name": "TypeScript",
+            "yearsOfExperience": "5 anos"
+          },
+          {
+            "name": "HTML/CSS",
+            "yearsOfExperience": "5 anos"
+          },
+          {
+            "name": "SQL",
+            "yearsOfExperience": "1 ano"
+          }
+        ]
+      },
+      {
+        "title": "FrontEnd",
+        "lucideIconName": "globe",
+        "items": [
+          {
+            "name": "React/Next.JS",
+            "yearsOfExperience": "5 anos"
+          },
+          {
+            "name": "TailwindCSS",
+            "yearsOfExperience": "3 anos"
+          },
+          {
+            "name": "React Query",
+            "yearsOfExperience": "3 anos"
+          },
+          {
+            "name": "Redux/RTK Query",
+            "yearsOfExperience": "4 anos"
+          },
+          {
+            "name": "GraphQL",
+            "yearsOfExperience": "1 ano"
+          }
+        ]
+      },
+      {
+        "title": "Ferramentas",
+        "lucideIconName": "wrench",
+        "items": [
+          {
+            "name": "Git/Github",
+            "yearsOfExperience": "5 anos"
+          },
+          {
+            "name": "Jira",
+            "yearsOfExperience": "3 anos"
+          },
+          {
+            "name": "Monday",
+            "yearsOfExperience": "2 anos"
+          }
+        ]
+      },
+      {
+        "title": "Ferramentas de Teste",
+        "lucideIconName": "test-tube-diagonal",
+        "items": [
+          {
+            "name": "Jest",
+            "yearsOfExperience": "3 anos"
+          },
+          {
+            "name": "React Testing Library",
+            "yearsOfExperience": "3 anos"
+          },
+          {
+            "name": "Cypress",
+            "yearsOfExperience": "3 anos"
+          },
+          {
+            "name": "Playwright",
+            "yearsOfExperience": "1 ano"
+          }
+        ]
+      },
+      {
+        "title": "Mobile",
+        "lucideIconName": "smartphone",
+        "items": [
+          {
+            "name": "Expo/React Native",
+            "yearsOfExperience": "2 anos"
+          },
+          {
+            "name": "EAS",
+            "yearsOfExperience": "2 anos"
+          }
+        ]
+      },
+      {
+        "title": "Backend",
+        "lucideIconName": "server",
+        "items": [
+          {
+            "name": "NodeJS",
+            "yearsOfExperience": "2 anos"
+          },
+          {
+            "name": "Express",
+            "yearsOfExperience": "2 anos"
+          },
+          {
+            "name": "Strapi",
+            "yearsOfExperience": "1 ano"
+          },
+          {
+            "name": "Firebase",
+            "yearsOfExperience": "2 anos"
+          },
+          {
+            "name": "NestJS",
+            "yearsOfExperience": "1 ano"
+          }
+        ]
+      }
+    ]
+  },
+  "get-in-touch": {
+    "title": "Entre em contato",
+    "description": "Preencha o formulário abaixo e eu retornarei o mais breve possível.",
+    "inputs": {
+      "name": {
+        "label": "Nome",
+        "placeholder": "Seu nome"
+      },
+      "last-name": {
+        "label": "Sobrenome",
+        "placeholder": "Seu sobrenome"
+      },
+      "email-address": {
+        "label": "Endereço de Email",
+        "placeholder": "Seu endereço de email"
+      },
+      "message": {
+        "label": "Mensagem",
+        "placeholder": "Sua mensagem",
+        "tooltip": "Sua mensagem deve ter pelo menos 10 caracteres."
+      }
+    },
+    "submitButton": "Enviar"
+  }
+}

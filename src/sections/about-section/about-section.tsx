@@ -1,16 +1,20 @@
 import { BlurFade } from "~/components/magicui/blur-fade";
-import { HightLightText } from "./components/hightlight-text/hightlight-text";
 import { SectionTitle } from "~/components/section-title/section-title";
+import { getDictionary } from "~/helpers/get-dictionaries";
 
-export function AboutSection() {
+export function AboutSection({
+  dictionary,
+}: {
+  dictionary: Awaited<ReturnType<typeof getDictionary>>["about"];
+}) {
   return (
     <section className="flex justify-center flex-col items-start">
       <div>
         <BlurFade inView>
-          <SectionTitle>About</SectionTitle>
+          <SectionTitle>{dictionary.title}</SectionTitle>
         </BlurFade>
         <BlurFade inView>
-          <p className="text-pretty text-sm text-muted-foreground">
+          {/* <p className="text-pretty text-sm text-muted-foreground">
             I&apos;m a <HightLightText>Senior React Developer</HightLightText>{" "}
             with 5 years of experience building complex web applications,
             including payment processing platforms and BAAS services. With a
@@ -28,6 +32,9 @@ export function AboutSection() {
             collaborative problem-solving, and have{" "}
             <HightLightText>Advanced English </HightLightText>
             communication skills.
+          </p> */}
+          <p className="text-pretty text-sm text-muted-foreground">
+            {dictionary.description}
           </p>
         </BlurFade>
       </div>

@@ -7,6 +7,9 @@ const nextConfig: NextConfig = {
       {
         hostname: "github.com",
       },
+      {
+        hostname: "media.licdn.com",
+      },
     ],
   },
 };

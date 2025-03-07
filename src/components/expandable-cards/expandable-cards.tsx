@@ -89,11 +89,11 @@ export function ExpandableCards({ cards, title }: Props) {
                     >
                       <Image
                         priority
-                        width={200}
-                        height={200}
+                        width={100}
+                        height={100}
                         src={active.src}
                         alt={active.title}
-                        className="h-32 w-32 rounded-full object-cover"
+                        className="h-[100px] w-[100px] rounded-full object-cover"
                       />
                     </motion.div>
                     <motion.h3

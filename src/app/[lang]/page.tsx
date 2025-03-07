@@ -8,6 +8,7 @@ import { HeroSection } from "~/sections/hero-section/hero-section";
 import { TechStackSection } from "~/sections/tech-stack-section/tech-stack-section";
 import { MyWorkExperienceSection } from "~/sections/work-experience-section/work-experience-section";
 import { Locale } from "../../../i18n-config";
+import { BlurFade } from "~/components/magicui/blur-fade";
 
 export default async function Home(props: {
   params: Promise<{ lang: Locale }>;
@@ -28,7 +29,9 @@ export default async function Home(props: {
         <GetInTouchSection dictionary={dictionary["get-in-touch"]} />
       </div>
       <div className="sticky bottom-12">
-        <DockNav />
+        <BlurFade delay={0.5}>
+          <DockNav />
+        </BlurFade>
       </div>
     </>
   );

@@ -46,7 +46,7 @@ export function LocaleToggle() {
         getNextLocale() === "en" ? "English" : "Portuguese"
       }`}
     >
-      {getNextLocale() === "en" ? <BrazilFlagIcon /> : <USAFlagIcon />}
+      {getNextLocale() !== "en" ? <BrazilFlagIcon /> : <USAFlagIcon />}
     </Button>
   );
 }

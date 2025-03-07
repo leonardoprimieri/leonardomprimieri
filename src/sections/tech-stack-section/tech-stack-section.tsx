@@ -1,14 +1,34 @@
+"use client";
 import { BlurFade } from "~/components/magicui/blur-fade";
 import { SectionTitle } from "~/components/section-title/section-title";
 import { HoverEffect } from "~/components/ui/card-hover-effect";
-import { TECH_STACK } from "./constants/tech-stack.const";
+import { getDictionary } from "~/helpers/get-dictionaries";
+import { DynamicIcon, IconName } from "lucide-react/dynamic";
 
-export function TechStackSection() {
+export function TechStackSection({
+  dictionary,
+}: {
+  dictionary: Awaited<ReturnType<typeof getDictionary>>["techs"];
+}) {
   return (
     <BlurFade inView>
       <section>
-        <SectionTitle>Techs I use daily</SectionTitle>
-        <HoverEffect items={TECH_STACK} />
+        <SectionTitle>{dictionary.title}</SectionTitle>
+        <HoverEffect
+          items={dictionary.cards.map((item) => ({
+            icon: (
+              <DynamicIcon
+                name={item.lucideIconName as IconName}
+                className="text-primary size-5"
+              />
+            ),
+            items: item.items.map((subItem) => ({
+              description: subItem.yearsOfExperience,
+              name: subItem.name,
+            })),
+            title: item.title,
+          }))}
+        />
       </section>
     </BlurFade>
   );

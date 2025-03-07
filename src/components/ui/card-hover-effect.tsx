@@ -1,8 +1,7 @@
 "use client";
 import { cn } from "~/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
-import { useState } from "react";
-import { LucideIcon } from "lucide-react";
+import { ReactNode, useState } from "react";
 
 export const HoverEffect = ({
   items,
@@ -10,7 +9,7 @@ export const HoverEffect = ({
 }: {
   items: {
     title: string;
-    icon: LucideIcon;
+    icon: ReactNode;
     items: { name: string; description: string }[];
   }[];
   className?: string;
@@ -50,7 +49,7 @@ export const HoverEffect = ({
           </AnimatePresence>
           <Card>
             <div className="flex items-center gap-4">
-              <item.icon className="text-primary size-5" />
+              {item.icon}
               <CardTitle>{item.title}</CardTitle>
             </div>
             <ul className="mt-6">

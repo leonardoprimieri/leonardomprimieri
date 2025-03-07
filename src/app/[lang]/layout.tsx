@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import { Geist, Inter } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 import { ThemeProvider } from "~/components/theme/theme-provider";
 import { PostHogProvider } from "~/providers/posthog-provider";
 import { ReactQueryProvider } from "~/providers/react-query-provider";
 import { Toaster } from "~/components/ui/sonner";
+import { Locale } from "../../../i18n-config";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -21,13 +22,14 @@ export const metadata: Metadata = {
   description: "Leonardo Merlo Primieri's personal website",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
+export default async function Root(props: {
   children: React.ReactNode;
-}>) {
+  params: Promise<{ lang: Locale }>;
+}) {
+  const params = await props.params;
+
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang={params.lang} suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${inter.variable} font-sans antialiased max-w-6xl p-12 mx-auto`}
       >
@@ -39,7 +41,7 @@ export default function RootLayout({
             disableTransitionOnChange
           >
             <PostHogProvider>
-              <main>{children}</main>
+              <main>{props.children}</main>
             </PostHogProvider>
             <Toaster />
           </ThemeProvider>

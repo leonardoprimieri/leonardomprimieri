@@ -1,4 +1,3 @@
-import { DockNav } from "~/components/dock-nav/dock-nav";
 import { getDictionary } from "~/helpers/get-dictionaries";
 import { AboutSection } from "~/sections/about-section/about-section";
 import { EducationSection } from "~/sections/education-section/education-section";
@@ -9,6 +8,7 @@ import { TechStackSection } from "~/sections/tech-stack-section/tech-stack-secti
 import { MyWorkExperienceSection } from "~/sections/work-experience-section/work-experience-section";
 import { Locale } from "../../../i18n-config";
 import { BlurFade } from "~/components/magicui/blur-fade";
+import { FooterDock } from "~/components/footer-dock/footer-dock";
 
 export default async function Home(props: {
   params: Promise<{ lang: Locale }>;
@@ -27,11 +27,11 @@ export default async function Home(props: {
         <GithubProjectsSection dictionary={dictionary.github} />
         <TechStackSection dictionary={dictionary.techs} />
         <GetInTouchSection dictionary={dictionary["get-in-touch"]} />
-      </div>
-      <div className="sticky bottom-12">
-        <BlurFade delay={0.5}>
-          <DockNav />
-        </BlurFade>
+        <div className="sticky bottom-12 w-full">
+          <BlurFade delay={0.5}>
+            <FooterDock />
+          </BlurFade>
+        </div>
       </div>
     </>
   );

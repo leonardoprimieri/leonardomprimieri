@@ -30,6 +30,12 @@ export default async function Root(props: {
 
   return (
     <html lang={params.lang} suppressHydrationWarning>
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/@tabler/core@1.1.1/dist/css/tabler-flags.min.css"
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${inter.variable} font-sans antialiased max-w-6xl p-12 mx-auto`}
       >

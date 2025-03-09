@@ -18,8 +18,8 @@ import {
   HoverCardContent,
   HoverCardTrigger,
 } from "~/components/ui/hover-card";
-import { InfoIcon } from "lucide-react";
 import { getDictionary } from "~/helpers/get-dictionaries";
+import { IconInfoCircle } from "@tabler/icons-react";
 
 export function GetInTouchSection({
   dictionary,
@@ -118,7 +118,7 @@ export function GetInTouchSection({
                 <Label htmlFor="email">{dictionary.inputs.message.label}</Label>
                 <HoverCard openDelay={100}>
                   <HoverCardTrigger>
-                    <InfoIcon size={16} />
+                    <IconInfoCircle size={16} />
                   </HoverCardTrigger>
                   <HoverCardContent>
                     {dictionary.inputs.message.tooltip}

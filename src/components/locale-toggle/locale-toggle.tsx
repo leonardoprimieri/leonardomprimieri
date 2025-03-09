@@ -3,9 +3,6 @@
 import { usePathname } from "next/navigation";
 import { useRouter } from "next/navigation";
 import { i18n, Locale } from "../../../i18n-config";
-import { Button } from "../ui/button";
-import { BrazilFlagIcon } from "~/icons/brazil-flag-icon";
-import { USAFlagIcon } from "~/icons/usa-flag-icon";
 
 export function LocaleToggle() {
   const pathname = usePathname();
@@ -36,17 +33,16 @@ export function LocaleToggle() {
   };
 
   return (
-    <Button
-      variant="ghost"
-      type="button"
-      size="icon"
-      className="px-2 rounded-full"
-      onClick={handleToggle}
-      aria-label={`Switch to ${
-        getNextLocale() === "en" ? "English" : "Portuguese"
-      }`}
-    >
-      {getNextLocale() !== "en" ? <BrazilFlagIcon /> : <USAFlagIcon />}
-    </Button>
+    <>
+      {getNextLocale() !== "en" ? (
+        <button onClick={handleToggle}>
+          <span className="flag flag-xs flag-country-us mb-[2px]"></span>
+        </button>
+      ) : (
+        <button onClick={handleToggle}>
+          <span className="flag flag-xs flag-country-br mb-[2px]"></span>
+        </button>
+      )}
+    </>
   );
 }

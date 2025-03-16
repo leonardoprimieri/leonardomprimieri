@@ -11,6 +11,14 @@ This is a sleek portfolio project I created to showcase my skills and projects.
 - **Resend** - Email delivery API
 - **GitHub Actions** - CI/CD workflows
 - **i18n** - Internationalization support
+- **Framer Motion** - Animation library
+- **React Hook Form** - Form validation library
+- **PostHog** - Analytics platform
+
+## UI Libs
+
+- **Aceternity UI** - UI Library for React
+- **Magic UI** - UI Library for React
 
 ## 🔗 Live Demo
 

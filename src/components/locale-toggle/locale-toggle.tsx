@@ -35,12 +35,12 @@ export function LocaleToggle() {
   return (
     <>
       {getNextLocale() !== "en" ? (
-        <button onClick={handleToggle}>
-          <span className="flag flag-xs flag-country-us mb-[2px]"></span>
+        <button onClick={handleToggle} data-testid="us-toggle-language">
+          <span className="flag flag-xs flag-country-us mb-[2px]" />
         </button>
       ) : (
-        <button onClick={handleToggle}>
-          <span className="flag flag-xs flag-country-br mb-[2px]"></span>
+        <button onClick={handleToggle} data-testid="br-toggle-language">
+          <span className="flag flag-xs flag-country-br mb-[2px]" />
         </button>
       )}
     </>

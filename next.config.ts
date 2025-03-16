@@ -9,9 +9,6 @@ const nextConfig: NextConfig = {
       {
         hostname: "media.licdn.com",
       },
-      {
-        hostname: "assets.aceternity.com",
-      },
     ],
   },
 };

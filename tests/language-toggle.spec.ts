@@ -2,7 +2,7 @@ import { test, expect } from "@playwright/test";
 
 test.describe("Language Toggle", () => {
   test("Should be able to change language", async ({ page }) => {
-    await page.goto("https://leonardo-primieri-portfolio.vercel.app/");
+    await page.goto("https://leonardo-primieri-portfolio.vercel.app/en");
     await page.getByTestId("us-toggle-language").click();
     await expect(
       page.getByRole("heading", { name: "Olá, eu sou Leonardo 👋" })

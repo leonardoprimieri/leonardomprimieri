@@ -46,7 +46,7 @@ export async function GithubProjectsSection({
             ))}
           </Marquee>
 
-          <Marquee pauseOnHover className="[--duration:20s]">
+          <Marquee pauseOnHover className="[--duration:25s]">
             {secondRow.map((project) => (
               <RepoCard
                 key={project.id}

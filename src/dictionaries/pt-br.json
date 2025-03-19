@@ -41,6 +41,25 @@
         }
       },
       {
+        "description": "Jan 2024 - Out 2024 · 10 meses",
+        "title": "ZUKESE - TECNOLOGIA E INOVAÇÃO · Desenvolvedor React/Next Freelance",
+        "src": "https://media.licdn.com/dms/image/v2/C4D0BAQGjIeAeB1HQZA/company-logo_100_100/company-logo_100_100/0/1660217069901/zukese_tech_innovation_logo?e=1747872000&v=beta&t=0VUicpRDDNSyEMJOZCAXz1MD4u7Odn1CG4PN2HCzZjA",
+        "details": {
+          "description": "Liderei o desenvolvimento de duas aplicações móveis multiplataforma de sucesso, publicadas tanto na Google Play quanto na App Store:",
+          "link": "https://www.zukese.com/",
+          "items-section": [
+            {
+              "title": "Zukese Events - Aplicativo de descoberta e compra de ingressos para eventos voltado ao consumidor",
+              "items": [
+                "Implementei pipeline de entrega contínua utilizando EAS Build e GitHub Actions, reduzindo o tempo de implantação",
+                "Utilizei EAS Update para atualizações fluidas via OTA (over-the-air), minimizando atrasos nas revisões das lojas de aplicativos",
+                "Desenvolvi funcionalidade de busca robusta com recursos de favoritos"
+              ]
+            }
+          ]
+        }
+      },
+      {
         "description": "Nov 2021 - Apr 2023 · 1 yr 6 mos",
         "title": "Softo - DevTeam as a Service - Desenvolvedor React/Next",
         "src": "https://media.licdn.com/dms/image/v2/C4D0BAQEM1ZdbjaT7dg/company-logo_100_100/company-logo_100_100/0/1647517164991/softodev_logo?e=1749686400&v=beta&t=OqneuHmfq2TlPq6fLCY_dCf6R2Lm76R0cfbGyctZqjo",
@@ -49,7 +68,7 @@
           "items-section": [
             {
               "title": "Globalfy",
-              "link": "https://globalfy.com",
+              "link": "https://globalfy.com/",
               "items": [
                 "Criação de cartão virtual",
                 "Criação de cartão de débito",
@@ -84,6 +103,7 @@
             },
             {
               "title": "F5 Academy",
+              "link": "https://f5.academy/",
               "items": [
                 "Liderei a criação e desenvolvimento do projeto",
                 "Implementei Tailwind, React Hook Form e Zustand"
@@ -116,7 +136,7 @@
             },
             {
               "title": "Ecommerce - Mega Atacado PF",
-              "link": "https://megaatacadopf.com.br",
+              "link": "https://megaatacadopf.com.br/",
               "items": [
                 "Listagem de produtos",
                 "Filtragem por categoria, nome, preço, mais vendidos, etc.",

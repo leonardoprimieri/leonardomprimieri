@@ -23,7 +23,7 @@ export const makeWorkExperienceCards = (
                     className="flex flex-col gap-2"
                     key={accomplishment.title}
                   >
-                    {accomplishment.link ? (
+                    {accomplishment.link !== "#" ? (
                       <Link href={accomplishment.link} target="_blank">
                         <HightLightText className="font-semibold text-xl mt-4">
                           {accomplishment.title}

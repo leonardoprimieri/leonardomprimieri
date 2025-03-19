@@ -19,6 +19,7 @@
           "items-section": [
             {
               "title": "Technical Accomplishments",
+              "link": "#",
               "items": [
                 "Improved page SEO and performance",
                 "Refactored HTTP calls to use react-query and implement caching",
@@ -30,11 +31,31 @@
             },
             {
               "title": "Performance Improvements",
+              "link": "#",
               "items": [
                 "Led the initiative to migrate from Webpack to Vite across all projects",
                 "Reduced build times, improving developer experience",
                 "Decreased initial load time for end users by implementing better code splitting",
                 "Optimized CI/CD pipeline execution time, resulting in faster deployments"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "description": "Jan 2024 - Oct 2024 · 10 mos",
+        "title": "ZUKESE - TECNOLOGIA E INOVAÇÃO · Freelance React/Next Developer",
+        "src": "https://media.licdn.com/dms/image/v2/C4D0BAQGjIeAeB1HQZA/company-logo_100_100/company-logo_100_100/0/1660217069901/zukese_tech_innovation_logo?e=1747872000&v=beta&t=0VUicpRDDNSyEMJOZCAXz1MD4u7Odn1CG4PN2HCzZjA",
+        "details": {
+          "description": "Led development of two successful cross-platform mobile applications published on both Google Play and App Store:",
+          "items-section": [
+            {
+              "title": "Zukese Events - Consumer-facing event discovery and ticketing app",
+              "link": "https://www.zukese.com/",
+              "items": [
+                "Implemented continuous delivery pipeline using EAS Build and GitHub Actions, reducing deployment time",
+                "Utilized EAS Update for seamless over-the-air updates, minimizing app store review delays",
+                "Built robust search functionality with favoriting capabilities"
               ]
             }
           ]
@@ -49,7 +70,7 @@
           "items-section": [
             {
               "title": "Globalfy",
-              "link": "https://globalfy.com",
+              "link": "https://globalfy.com/",
               "items": [
                 "Virtual card creation",
                 "Debit card creation",
@@ -63,6 +84,7 @@
             },
             {
               "title": "Payment Gateway and Platform",
+              "link": "#",
               "items": [
                 "Creation and listing of Coupons, Transfers, Products, Customers, Payment Links, Invoices and Subscriptions",
                 "Maintenance of the Hosted Checkout system, handling credit card and information of customers"
@@ -70,6 +92,7 @@
             },
             {
               "title": "Design System",
+              "link": "#",
               "items": [
                 "Helped team in the creation of components using Bit.dev and ReactJS"
               ]
@@ -84,6 +107,7 @@
             },
             {
               "title": "F5 Academy",
+              "link": "https://f5.academy/",
               "items": [
                 "Led the creation and development of the project",
                 "Implemented Tailwind, React Hook Form, and Zustand"
@@ -91,6 +115,7 @@
             },
             {
               "title": "Special Contributions",
+              "link": "#",
               "items": [
                 "Implemented Cypress into CI and CD pipelines",
                 "Improved build and CI/CD time by replacing Webpack with Vite across all company projects"
@@ -108,6 +133,7 @@
           "items-section": [
             {
               "title": "Video Publishing Platform",
+              "link": "#",
               "items": [
                 "Creation of login and authentication system with Firebase",
                 "Creating and modeling the database with Firebase",
@@ -116,7 +142,7 @@
             },
             {
               "title": "Ecommerce - Mega Atacado PF",
-              "link": "https://megaatacadopf.com.br",
+              "link": "https://megaatacadopf.com.br/",
               "items": [
                 "Product listing",
                 "Filtering by category, name, price, best sellers, etc.",
@@ -140,6 +166,7 @@
           "items-section": [
             {
               "title": "Educational Background",
+              "link": "#",
               "items": [
                 "Studied algorithms, data structures, and software engineering",
                 "Developed a strong foundation in computer science theory and practice",

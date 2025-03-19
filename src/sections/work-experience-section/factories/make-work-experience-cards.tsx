@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { getDictionary } from "~/helpers/get-dictionaries";
 import { HightLightText } from "~/sections/about-section/components/hightlight-text/hightlight-text";
 
@@ -22,9 +23,18 @@ export const makeWorkExperienceCards = (
                     className="flex flex-col gap-2"
                     key={accomplishment.title}
                   >
-                    <HightLightText className="font-semibold text-xl mt-4">
-                      {accomplishment.title}
-                    </HightLightText>
+                    {accomplishment.link !== "#" ? (
+                      <Link href={accomplishment.link} target="_blank">
+                        <HightLightText className="font-semibold text-xl mt-4">
+                          {accomplishment.title}
+                        </HightLightText>
+                      </Link>
+                    ) : (
+                      <HightLightText className="font-semibold text-xl mt-4">
+                        {accomplishment.title}
+                      </HightLightText>
+                    )}
+
                     <ul className="list-disc pl-5 space-y-1 mt-4">
                       {accomplishment.items.map((item) => {
                         return <li key={item}>{item}</li>;

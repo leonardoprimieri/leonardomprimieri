@@ -19,6 +19,7 @@
           "items-section": [
             {
               "title": "Atividades Técnicas",
+              "link": "#",
               "items": [
                 "Melhorei o SEO e o desempenho da página",
                 "Refatorei chamadas HTTP para usar react-query e implementar cache",
@@ -30,6 +31,7 @@
             },
             {
               "title": "Performance",
+              "link": "#",
               "items": [
                 "Liderei a iniciativa de migrar do Webpack para o Vite em todos os projetos",
                 "Reduzi os tempos de compilação, melhorando a experiência do desenvolvedor",
@@ -50,6 +52,7 @@
           "items-section": [
             {
               "title": "Zukese Events - Aplicativo de descoberta e compra de ingressos para eventos voltado ao consumidor",
+              "link": "#",
               "items": [
                 "Implementei pipeline de entrega contínua utilizando EAS Build e GitHub Actions, reduzindo o tempo de implantação",
                 "Utilizei EAS Update para atualizações fluidas via OTA (over-the-air), minimizando atrasos nas revisões das lojas de aplicativos",
@@ -82,6 +85,7 @@
             },
             {
               "title": "Gateway de Pagamento e Plataforma",
+              "link": "#",
               "items": [
                 "Criação e listagem de Cupons, Transferências, Produtos, Clientes, Links de Pagamento, Faturas e Assinaturas",
                 "Manutenção do sistema Hosted Checkout, manipulando cartão de crédito e informações de clientes"
@@ -89,6 +93,7 @@
             },
             {
               "title": "Design System",
+              "link": "#",
               "items": [
                 "Ajudei a equipe na criação de componentes usando Bit.dev e ReactJS"
               ]
@@ -111,6 +116,7 @@
             },
             {
               "title": "Contribuições Especiais",
+              "link": "#",
               "items": [
                 "Implementei Cypress em pipelines de CI e CD",
                 "Melhorei o tempo de build e CI/CD substituindo o Webpack pelo Vite em todos os projetos da empresa"
@@ -128,6 +134,7 @@
           "items-section": [
             {
               "title": "Plataforma de Publicação de Vídeos",
+              "link": "#",
               "items": [
                 "Criação de sistema de login e autenticação com Firebase",
                 "Criação e modelagem do banco de dados com Firebase",
@@ -160,6 +167,7 @@
           "items-section": [
             {
               "title": "Formação Acadêmica",
+              "link": "#",
               "items": [
                 "Estudei algoritmos, estruturas de dados e engenharia de software",
                 "Desenvolvi uma base sólida em teoria e prática da ciência da computação",

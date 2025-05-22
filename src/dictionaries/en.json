@@ -43,25 +43,6 @@
         }
       },
       {
-        "description": "Jan 2024 - Oct 2024 · 10 mos",
-        "title": "ZUKESE - TECNOLOGIA E INOVAÇÃO · Freelance React/Next Developer",
-        "src": "https://media.licdn.com/dms/image/v2/C4D0BAQGjIeAeB1HQZA/company-logo_100_100/company-logo_100_100/0/1660217069901/zukese_tech_innovation_logo?e=1747872000&v=beta&t=0VUicpRDDNSyEMJOZCAXz1MD4u7Odn1CG4PN2HCzZjA",
-        "details": {
-          "description": "Led development of two successful cross-platform mobile applications published on both Google Play and App Store:",
-          "items-section": [
-            {
-              "title": "Zukese Events - Consumer-facing event discovery and ticketing app",
-              "link": "https://www.zukese.com/",
-              "items": [
-                "Implemented continuous delivery pipeline using EAS Build and GitHub Actions, reducing deployment time",
-                "Utilized EAS Update for seamless over-the-air updates, minimizing app store review delays",
-                "Built robust search functionality with favoriting capabilities"
-              ]
-            }
-          ]
-        }
-      },
-      {
         "description": "Nov 2021 - Apr 2023 · 1 yr 6 mos",
         "title": "Softo - DevTeam as a Service - React/Next Developer",
         "src": "https://media.licdn.com/dms/image/v2/C4D0BAQEM1ZdbjaT7dg/company-logo_100_100/company-logo_100_100/0/1647517164991/softodev_logo?e=1749686400&v=beta&t=OqneuHmfq2TlPq6fLCY_dCf6R2Lm76R0cfbGyctZqjo",

@@ -5,7 +5,7 @@ test.describe("Language Toggle", () => {
     await page.goto("https://leonardo-primieri-portfolio.vercel.app/en");
     await page.getByTestId("us-toggle-language").click();
     await expect(
-      page.getByRole("heading", { name: "Olá, eu sou Leonardo 👋" })
+      page.getByRole("heading", { name: "Olá, meu nome é Leonardo 👋" })
     ).toBeVisible();
     await expect(
       page.getByText(

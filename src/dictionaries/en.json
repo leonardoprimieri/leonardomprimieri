@@ -5,7 +5,7 @@
   },
   "about": {
     "title": "About",
-    "description": "I'm a Senior React Developer with 5 years of experience building complex web applications, including payment processing platforms and BAAS services. With a Computer Science degree and expertise in React, Typescript, NextJS, Javascript, and various state management solutions, I create clean, high-quality code that scales. I thrive in fast-paced software house environments where I can tackle diverse projects and learn continuously. After successful roles in Brazil, I'm now seeking international opportunities to challenge myself and gain exposure to how larger companies approach development. I'm passionate about code quality, enjoy collaborative problem-solving, and have Advanced English communication skills."
+    "description": "I'm a Senior React Developer with {{years}} of experience building complex web applications, including payment processing platforms and BAAS services. With a Computer Science degree and expertise in React, Typescript, NextJS, Javascript, and various state management solutions, I create clean, high-quality code that scales. I thrive in fast-paced software house environments where I can tackle diverse projects and learn continuously. After successful roles in Brazil, I'm now seeking international opportunities to challenge myself and gain exposure to how larger companies approach development. I'm passionate about code quality, enjoy collaborative problem-solving, and have Advanced English communication skills."
   },
   "work-experience": {
     "title": "Work Experience",
@@ -171,19 +171,19 @@
         "items": [
           {
             "name": "JavaScript",
-            "yearsOfExperience": "5 years"
+            "startYear": 2019
           },
           {
             "name": "TypeScript",
-            "yearsOfExperience": "5 years"
+            "startYear": 2019
           },
           {
             "name": "HTML/CSS",
-            "yearsOfExperience": "5 years"
+            "startYear": 2019
           },
           {
             "name": "SQL",
-            "yearsOfExperience": "1 year"
+            "startYear": "1 year"
           }
         ]
       },
@@ -193,23 +193,23 @@
         "items": [
           {
             "name": "React/Next.JS",
-            "yearsOfExperience": "5 years"
+            "startYear": 2019
           },
           {
             "name": "TailwindCSS",
-            "yearsOfExperience": "3 years"
+            "startYear": 2022
           },
           {
             "name": "React Query",
-            "yearsOfExperience": "3 years"
+            "startYear": 2022
           },
           {
             "name": "Redux/RTK Query",
-            "yearsOfExperience": "4 years"
+            "startYear": 2022
           },
           {
             "name": "GraphQL",
-            "yearsOfExperience": "1 year"
+            "startYear": "1 year"
           }
         ]
       },
@@ -219,15 +219,15 @@
         "items": [
           {
             "name": "Git/Github",
-            "yearsOfExperience": "5 years"
+            "startYear": 2019
           },
           {
             "name": "Jira",
-            "yearsOfExperience": "3 years"
+            "startYear": 2022
           },
           {
             "name": "Monday",
-            "yearsOfExperience": "2 years"
+            "startYear": 2023
           }
         ]
       },
@@ -237,19 +237,19 @@
         "items": [
           {
             "name": "Jest",
-            "yearsOfExperience": "3 years"
+            "startYear": 2022
           },
           {
             "name": "React Testing Library",
-            "yearsOfExperience": "3 years"
+            "startYear": 2022
           },
           {
             "name": "Cypress",
-            "yearsOfExperience": "3 years"
+            "startYear": 2022
           },
           {
             "name": "Playwright",
-            "yearsOfExperience": "1 year"
+            "startYear": 2024
           }
         ]
       },
@@ -259,11 +259,11 @@
         "items": [
           {
             "name": "Expo/React Native",
-            "yearsOfExperience": "2 years"
+            "startYear": 2023
           },
           {
             "name": "EAS",
-            "yearsOfExperience": "2 years"
+            "startYear": 2023
           }
         ]
       },
@@ -273,23 +273,23 @@
         "items": [
           {
             "name": "NodeJS",
-            "yearsOfExperience": "2 years"
+            "startYear": 2023
           },
           {
             "name": "Express",
-            "yearsOfExperience": "2 years"
+            "startYear": 2023
           },
           {
             "name": "Strapi",
-            "yearsOfExperience": "1 year"
+            "startYear": 2023
           },
           {
             "name": "Firebase",
-            "yearsOfExperience": "2 years"
+            "startYear": 2023
           },
           {
             "name": "NestJS",
-            "yearsOfExperience": "1 year"
+            "startYear": 2023
           }
         ]
       }

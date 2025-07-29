@@ -5,6 +5,7 @@ import { HoverEffect } from "~/components/ui/card-hover-effect";
 import { getDictionary } from "~/helpers/get-dictionaries";
 import { DynamicIcon, IconName } from "lucide-react/dynamic";
 import { FollowerPointerCard } from "~/components/ui/following-pointer";
+import { getYearsOfExperience } from "./helpers/get-years-of-experience";
 
 export function TechStackSection({
   dictionary,
@@ -25,7 +26,10 @@ export function TechStackSection({
                 />
               ),
               items: item.items.map((subItem) => ({
-                description: subItem.yearsOfExperience,
+                description: getYearsOfExperience({
+                  value: subItem.startYear,
+                  shouldAppendYear: true,
+                }),
                 name: subItem.name,
               })),
               title: item.title,

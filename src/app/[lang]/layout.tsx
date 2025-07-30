@@ -5,6 +5,8 @@ import { ThemeProvider } from "~/components/theme/theme-provider";
 import { PostHogProvider } from "~/providers/posthog-provider";
 import { ReactQueryProvider } from "~/providers/react-query-provider";
 import { Toaster } from "~/components/ui/sonner";
+import { CVDownloadButton } from "~/components/cv-download-button/cv-download-button";
+import { getDictionary } from "~/helpers/get-dictionaries";
 import { Locale } from "../../../i18n-config";
 
 const geistSans = Geist({
@@ -27,6 +29,7 @@ export default async function Root(props: {
   params: Promise<{ lang: Locale }>;
 }) {
   const params = await props.params;
+  const dictionary = await getDictionary(params.lang);
 
   return (
     <html lang={params.lang} suppressHydrationWarning>
@@ -48,6 +51,7 @@ export default async function Root(props: {
           >
             <PostHogProvider>
               <main>{props.children}</main>
+              <CVDownloadButton dictionary={dictionary["cv-download"]} />
             </PostHogProvider>
             <Toaster />
           </ThemeProvider>

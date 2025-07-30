@@ -318,5 +318,9 @@
       }
     },
     "submitButton": "Enviar"
+  },
+  "cv-download": {
+    "button": "Baixar CV",
+    "downloading": "Baixando..."
   }
 }

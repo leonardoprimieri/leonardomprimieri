@@ -32,8 +32,6 @@ export function CVDownloadButton({
     }
   };
 
-  return null;
-
   return (
     <div
       className={cn(

@@ -30,12 +30,13 @@ export function middleware(request: NextRequest) {
   // If you have one
   if (
     [
-      '/manifest.json',
-      '/favicon.ico',
+      "/manifest.json",
+      "/favicon.ico",
+      "/resume_leonardo_primieri.pdf",
       // Your other files in `public`
     ].includes(pathname)
   )
-    return
+    return;
 
   // Check if there is any supported locale in the pathname
   const pathnameIsMissingLocale = i18n.locales.every(
@@ -59,5 +60,7 @@ export function middleware(request: NextRequest) {
 
 export const config = {
   // Matcher ignoring `/_next/` and `/api/`
-  matcher: ["/((?!api|_next/static|_next/image|favicon.ico|.*\\.png$|.*\\.jpg$|.*\\.jpeg$).*)"],
+  matcher: [
+    "/((?!api|_next/static|_next/image|favicon.ico|.*\\.png$|.*\\.jpg$|.*\\.jpeg$).*)",
+  ],
 };

@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Download, FileText, Loader2 } from "lucide-react";
 import { Button } from "~/components/ui/button";
 import { cn } from "~/lib/utils";
-import { downloadCV } from "./services/cv-download.service";
+import { downloadCV, validateCVExists } from "./services/cv-download.service";
 import { getDictionary } from "~/helpers/get-dictionaries";
 
 interface CVDownloadButtonProps {
@@ -12,18 +12,19 @@ interface CVDownloadButtonProps {
   dictionary: Awaited<ReturnType<typeof getDictionary>>["cv-download"];
 }
 
-export function CVDownloadButton({ className, dictionary }: CVDownloadButtonProps) {
+export function CVDownloadButton({
+  className,
+  dictionary,
+}: CVDownloadButtonProps) {
   const [isLoading, setIsLoading] = useState(false);
+
+  if (!validateCVExists()) return null;
 
   const handleDownload = async () => {
     setIsLoading(true);
 
     try {
-      await downloadCV({
-        delay: 800,
-        filename: "Leonardo_Primieri_CV.pdf",
-        filePath: "/resume_leonardo_primieri.pdf",
-      });
+      await downloadCV();
     } catch (error) {
       console.error("Download failed:", error);
     } finally {

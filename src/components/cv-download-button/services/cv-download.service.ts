@@ -1,5 +1,4 @@
 const filePath = process.cwd() + "resume_leonardo_primieri.pdf";
-console.log("🚀 ~ filePath:", filePath);
 
 export const downloadCV = async (): Promise<void> => {
   await new Promise((resolve) => setTimeout(resolve, 800));

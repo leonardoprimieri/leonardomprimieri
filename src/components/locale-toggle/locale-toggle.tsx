@@ -35,12 +35,20 @@ export function LocaleToggle() {
   return (
     <>
       {getNextLocale() !== "en" ? (
-        <button onClick={handleToggle} data-testid="us-toggle-language">
-          <span className="flag flag-xs flag-country-us mb-[2px]" />
+        <button 
+          onClick={handleToggle} 
+          data-testid="us-toggle-language"
+          className="h-full w-full flex items-center justify-center absolute inset-0 cursor-pointer bg-transparent border-none outline-none"
+        >
+          <span className="flag flag-xs flag-country-us mb-[2px] pointer-events-none" />
         </button>
       ) : (
-        <button onClick={handleToggle} data-testid="br-toggle-language">
-          <span className="flag flag-xs flag-country-br mb-[2px]" />
+        <button 
+          onClick={handleToggle} 
+          data-testid="br-toggle-language"
+          className="h-full w-full flex items-center justify-center absolute inset-0 cursor-pointer bg-transparent border-none outline-none"
+        >
+          <span className="flag flag-xs flag-country-br mb-[2px] pointer-events-none" />
         </button>
       )}
     </>

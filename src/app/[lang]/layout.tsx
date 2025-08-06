@@ -40,7 +40,7 @@ export default async function Root(props: {
         />
       </head>
       <body
-        className={`${geistSans.variable} ${inter.variable} font-sans antialiased max-w-6xl p-12 mx-auto`}
+        className={`${geistSans.variable} ${inter.variable} font-sans antialiased max-w-7xl p-12 mx-auto`}
       >
         <ReactQueryProvider>
           <ThemeProvider

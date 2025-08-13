@@ -5,52 +5,13 @@
   },
   "about": {
     "title": "About",
-    "description": "I'm a Senior <highlight>React</highlight> Developer <highlight>with {{years}} of experience</highlight> building complex web applications, including <highlight>Payment Gateways</highlight>, <highlight>TMSs</highlight> and <highlight>Bank as A Service</highlight> platforms. With a Computer Science degree and expertise in <highlight>React</highlight>, <highlight>Typescript</highlight>, <highlight>NextJS</highlight>, <highlight>Javascript</highlight>, and various state management solutions, I create clean, high-quality code that scales. I thrive in fast-paced software house environments where I can tackle diverse projects and learn continuously. After successful roles in Brazil, I'm now seeking international opportunities to challenge myself and gain exposure to how larger companies approach development. I'm passionate about code quality, enjoy collaborative problem-solving, and have <highlight>Advanced English communication skills</highlight>."
+    "description": "I'm a Senior <highlight>React</highlight> Developer <highlight>with {{years}} of experience</highlight> building complex web applications, including payment processing platforms and <highlight>BAAS</highlight> services. With a Computer Science degree and expertise in <highlight>React</highlight>, <highlight>Typescript</highlight>, <highlight>NextJS</highlight>, <highlight>Javascript</highlight>, and various state management solutions, I create clean, high-quality code that scales. I thrive in fast-paced software house environments where I can tackle diverse projects and learn continuously. After successful roles in Brazil, I'm now seeking international opportunities to challenge myself and gain exposure to how larger companies approach development. I'm passionate about code quality, enjoy collaborative problem-solving, and have <highlight>Advanced English communication skills</highlight>."
   },
   "work-experience": {
     "title": "Work Experience",
     "jobs": [
       {
-        "description": "March 2024 - Present · 1 yr 6 mos",
-        "title": "Shipwell - Frontend Developer",
-        "src": "/shipwell_logo.jpeg",
-        "details": {
-          "description": "Responsible for maintaining and developing features in a large-scale Transportation Management System (TMS) using ReactJS, TailwindCSS, and Auth0.",
-          "items-section": [
-            {
-              "title": "Key Responsibilities",
-              "link": "#",
-              "items": [
-                "Ensured feature stability and reliability with end-to-end tests using Playwright.",
-                "Collaborated with Staff Engineers to define scalable architecture and maintain code quality.",
-                "Led and contributed to Frontend Chapters to improve development standards, performance, and architecture.",
-                "Created and maintained internal documentation, onboarding guides, and technical standards to speed up training and ensure consistency.",
-                "Proposed and facilitated integration of Figma MCP with Code Connect to improve designer-developer collaboration.",
-                "Refactored legacy code to adopt modern patterns, enhancing readability and reducing technical debt.",
-                "Participated in CI/CD pipeline improvements to monitor build performance and increase deployment reliability.",
-                "Assisted in migration from Vite to Webpack, adapting project structure and resolving compatibility issues."
-              ]
-            },
-            {
-              "title": "Technologies Used",
-              "link": "#",
-              "items": [
-                "ReactJS",
-                "TailwindCSS",
-                "Auth0",
-                "Playwright",
-                "Webpack",
-                "CI/CD",
-                "Vite (legacy)",
-                "Figma Code Connect",
-                "Technical Documentation"
-              ]
-            }
-          ]
-        }
-      },
-      {
-        "description": "Mar 2023 - Mar 2024 · 1 yr 1 mo",
+        "description": "Mar 2023 - Present · 2 yrs",
         "title": "Wine Locals - React/Next Developer",
         "src": "/winelocals_logo.jpeg",
         "details": {

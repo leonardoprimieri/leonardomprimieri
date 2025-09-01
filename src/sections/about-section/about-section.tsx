@@ -6,8 +6,10 @@ import { getYearsOfExperience } from "~/sections/tech-stack-section/helpers/get-
 
 export function AboutSection({
   dictionary,
+  language = "en",
 }: {
   dictionary: Awaited<ReturnType<typeof getDictionary>>["about"];
+  language?: "en" | "pt-br";
 }) {
   return (
     <section className="flex justify-center flex-col items-start">
@@ -21,7 +23,9 @@ export function AboutSection({
               text: dictionary.description.replace(
                 "{{years}}",
                 getYearsOfExperience({
-                  value: 2019,
+                  value: 2020,
+                  shouldAppendYear: true,
+                  language,
                 })
               ),
             })}

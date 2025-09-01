@@ -21,7 +21,7 @@ export default async function Home(props: {
     <>
       <div className="flex flex-col gap-12">
         <HeroSection dictionary={dictionary.hero} />
-        <AboutSection dictionary={dictionary.about} />
+        <AboutSection dictionary={dictionary.about} language={lang} />
         <MyWorkExperienceSection dictionary={dictionary["work-experience"]} />
         <EducationSection dictionary={dictionary.education} />
         <GithubProjectsSection dictionary={dictionary.github} />

@@ -5,7 +5,7 @@
   },
   "about": {
     "title": "About",
-    "description": "I'm a Senior <highlight>React</highlight> Developer <highlight>with {{years}} of experience</highlight> building complex web applications, including payment processing platforms and <highlight>BAAS</highlight> services. With a Computer Science degree and expertise in <highlight>React</highlight>, <highlight>Typescript</highlight>, <highlight>NextJS</highlight>, <highlight>Javascript</highlight>, and various state management solutions, I create clean, high-quality code that scales. I thrive in fast-paced software house environments where I can tackle diverse projects and learn continuously. After successful roles in Brazil, I'm now seeking international opportunities to challenge myself and gain exposure to how larger companies approach development. I'm passionate about code quality, enjoy collaborative problem-solving, and have <highlight>Advanced English communication skills</highlight>."
+    "description": "I'm a Senior <highlight>React</highlight> Developer <highlight>with {{years}} of experience</highlight> building complex web applications, including payment processing platforms and <highlight>BAAS</highlight> services. With a Computer Science degree and expertise in <highlight>React</highlight>, <highlight>Typescript</highlight>, <highlight>NextJS</highlight>, <highlight>Javascript</highlight>, and various state management solutions, I create clean, high-quality code that scales. I thrive in fast-paced software house environments where I can tackle diverse projects and learn continuously. I'm constantly seeking new challenges and opportunities for professional growth, whether in national or international projects. I'm passionate about code quality, enjoy collaborative problem-solving, and have <highlight>Advanced English communication skills</highlight>."
   },
   "work-experience": {
     "title": "Work Experience",
@@ -171,15 +171,15 @@
         "items": [
           {
             "name": "JavaScript",
-            "startYear": 2019
+            "startYear": 2020
           },
           {
             "name": "TypeScript",
-            "startYear": 2019
+            "startYear": 2020
           },
           {
             "name": "HTML/CSS",
-            "startYear": 2019
+            "startYear": 2020
           },
           {
             "name": "SQL",
@@ -193,7 +193,7 @@
         "items": [
           {
             "name": "React/Next.JS",
-            "startYear": 2019
+            "startYear": 2020
           },
           {
             "name": "TailwindCSS",
@@ -219,7 +219,7 @@
         "items": [
           {
             "name": "Git/Github",
-            "startYear": 2019
+            "startYear": 2020
           },
           {
             "name": "Jira",

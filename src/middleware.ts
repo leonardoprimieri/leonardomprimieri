@@ -1,66 +1,132 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
+import { i18n, type Locale } from "../i18n-config";
 
-import { match as matchLocale } from "@formatjs/intl-localematcher";
-import Negotiator from "negotiator";
-import { i18n } from "../i18n-config";
+// Cache for parsed accept-language headers to avoid repeated processing
+const localeCache = new Map<string, Locale>();
 
-function getLocale(request: NextRequest): string | undefined {
-  // Negotiator expects plain object so we need to transform headers
-  const negotiatorHeaders: Record<string, string> = {};
-  request.headers.forEach((value, key) => (negotiatorHeaders[key] = value));
+function getLocale(request: NextRequest): Locale {
+  const acceptLanguage = request.headers.get('accept-language') || '';
+  
+  // Check cache first
+  if (localeCache.has(acceptLanguage)) {
+    return localeCache.get(acceptLanguage)!;
+  }
 
-  // @ts-expect-error locales are readonly
-  const locales: string[] = i18n.locales;
+  let detectedLocale: Locale = i18n.defaultLocale;
 
-  // Use negotiator and intl-localematcher to get best locale
-  const languages = new Negotiator({ headers: negotiatorHeaders }).languages(
-    locales
-  );
+  try {
+    // Fast locale detection without heavy libraries
+    if (acceptLanguage) {
+      // Parse accept-language header manually for better performance
+      const languages = acceptLanguage
+        .split(',')
+        .map(lang => {
+          const parts = lang.trim().split(';');
+          const locale = parts[0].toLowerCase();
+          const quality = parts[1] ? parseFloat(parts[1].split('=')[1]) : 1;
+          return { locale, quality };
+        })
+        .sort((a, b) => b.quality - a.quality);
 
-  const locale = matchLocale(languages, locales, i18n.defaultLocale);
+      // Find first matching locale
+      for (const lang of languages) {
+        // Direct match
+        if (i18n.locales.includes(lang.locale as Locale)) {
+          detectedLocale = lang.locale as Locale;
+          break;
+        }
+        
+        // Language code match (en for en-US)
+        const langCode = lang.locale.split('-')[0];
+        const matchingLocale = i18n.locales.find(locale => locale.startsWith(langCode));
+        if (matchingLocale) {
+          detectedLocale = matchingLocale;
+          break;
+        }
+      }
+    }
+  } catch {
+    // Fallback to default locale on any error
+    detectedLocale = i18n.defaultLocale;
+  }
 
-  return locale;
+  // Cache the result (limit cache size to prevent memory leaks)
+  if (localeCache.size > 100) {
+    const firstKey = localeCache.keys().next().value;
+    if (firstKey) {
+      localeCache.delete(firstKey);
+    }
+  }
+  localeCache.set(acceptLanguage, detectedLocale);
+
+  return detectedLocale;
 }
 
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
 
-  // `/_next/` and `/api/` are ignored by the watcher, but we need to ignore files in `public` manually.
-  // If you have one
+  // Fast path: skip processing for static assets and API routes
   if (
-    [
-      "/manifest.json",
-      "/favicon.ico",
-      "/resume_leonardo_primieri.pdf",
-      // Your other files in `public`
-    ].includes(pathname)
-  )
+    pathname.startsWith('/_next/') ||
+    pathname.startsWith('/api/') ||
+    pathname.includes('.') // Skip files with extensions (images, fonts, etc.)
+  ) {
     return;
+  }
 
-  // Check if there is any supported locale in the pathname
-  const pathnameIsMissingLocale = i18n.locales.every(
-    (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
-  );
+  // Additional static files to skip
+  const staticFiles = [
+    "/manifest.json",
+    "/favicon.ico", 
+    "/resume_leonardo_primieri.pdf", // cSpell:disable-line
+    "/robots.txt",
+    "/sitemap.xml"
+  ];
+  
+  if (staticFiles.includes(pathname)) {
+    return;
+  }
 
-  // Redirect if there is no locale
-  if (pathnameIsMissingLocale) {
+  // Fast locale check using startsWith for better performance
+  let pathnameHasLocale = false;
+  for (const locale of i18n.locales) {
+    if (pathname === `/${locale}` || pathname.startsWith(`/${locale}/`)) {
+      pathnameHasLocale = true;
+      break;
+    }
+  }
+
+  // Only redirect if no locale is present in the path
+  if (!pathnameHasLocale) {
     const locale = getLocale(request);
-
-    // e.g. incoming request is /products
-    // The new URL is now /en-US/products
-    return NextResponse.redirect(
-      new URL(
-        `/${locale}${pathname.startsWith("/") ? "" : "/"}${pathname}`,
-        request.url
-      )
-    );
+    
+    // Construct redirect URL more efficiently
+    const redirectPath = pathname === '/' ? `/${locale}` : `/${locale}${pathname}`;
+    
+    const response = NextResponse.redirect(new URL(redirectPath, request.url));
+    
+    // Add cache headers for better performance
+    response.headers.set('Cache-Control', 'no-cache');
+    
+    return response;
   }
 }
 
 export const config = {
-  // Matcher ignoring `/_next/` and `/api/`
+  // Optimized matcher to exclude more static assets for better performance
   matcher: [
-    "/((?!api|_next/static|_next/image|favicon.ico|.*\\.png$|.*\\.jpg$|.*\\.jpeg$).*)",
+    /*
+     * Match all request paths except for the ones starting with:
+     * - api (API routes)
+     * - _next/static (static files)
+     * - _next/image (image optimization files)
+     * - favicon.ico (favicon file)
+     * - *.png, *.jpg, *.jpeg, *.gif, *.svg, *.webp (image files)
+     * - *.css, *.js (static assets)
+     * - *.ico, *.ttf, *.otf, *.woff, *.woff2 (fonts and icons)
+     * - manifest.json, robots.txt, sitemap.xml (static files)
+     */
+    '/((?!api|_next/static|_next/image|favicon.ico|manifest.json|robots.txt|sitemap.xml|.*\\.[css|js|png|jpg|jpeg|gif|svg|webp|ico|ttf|otf|woff|woff2]$).*)',
   ],
 };
